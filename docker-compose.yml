@@ -1,7 +1,18 @@
+x-common-environment: &common-environment
+  DB_HOST: postgres
+  DB_NAME: item_data_db
+  DB_USER: item_data_user
+  DB_PASSWORD: secure_password_123
+
+x-common-volumes: &common-volumes
+  - ./queue:/app/queue
+
+x-common-depends: &common-depends
+  - postgres
+
 services:
   postgres:
     image: postgres:latest
-    container_name: item_data_postgres
     environment:
       POSTGRES_USER: item_data_user
       POSTGRES_PASSWORD: secure_password_123
@@ -17,86 +28,52 @@ services:
 
   dash_app:
     build: ./dash_app
-    container_name: item_dashboard
     ports:
       - "8050:8050"
     volumes:
       - ./dash_app:/dash_app
-    depends_on:
-      - postgres
-    environment:
-      DB_HOST: postgres
-      DB_NAME: item_data_db
-      DB_USER: item_data_user
-      DB_PASSWORD: secure_password_123
+    depends_on: *common-depends
+    environment: *common-environment
     restart: unless-stopped
     networks:
       - item_data_network
 
   data_collection_blood_runes:
     build: ./data_collector
-    container_name: data_collection_blood_runes
-    depends_on:
-      - postgres
-    environment:
-      DB_HOST: postgres
-      DB_NAME: item_data_db
-      DB_USER: item_data_user
-      DB_PASSWORD: secure_password_123
     command: ["--item", "565"]
-    volumes:
-      - ./queue:/app/queue
+    volumes: *common-volumes
+    depends_on: *common-depends
+    environment: *common-environment
     restart: unless-stopped
     networks:
       - item_data_network
 
   data_collection_bird_nests:
     build: ./data_collector
-    container_name: data_collection_bird_nests
-    depends_on:
-      - postgres
-    environment:
-      DB_HOST: postgres
-      DB_NAME: item_data_db
-      DB_USER: item_data_user
-      DB_PASSWORD: secure_password_123
     command: ["--item", "5075"]
-    volumes:
-      - ./queue:/app/queue
+    volumes: *common-volumes
+    depends_on: *common-depends
+    environment: *common-environment
     restart: unless-stopped
     networks:
       - item_data_network
 
   data_collection_oak_planks:
     build: ./data_collector
-    container_name: data_collection_oak_planks
-    depends_on:
-      - postgres
-    environment:
-      DB_HOST: postgres
-      DB_NAME: item_data_db
-      DB_USER: item_data_user
-      DB_PASSWORD: secure_password_123
     command: ["--item", "8778"]
-    volumes:
-      - ./queue:/app/queue
+    volumes: *common-volumes
+    depends_on: *common-depends
+    environment: *common-environment
     restart: unless-stopped
     networks:
       - item_data_network
 
   data_collection_dragon_bones:
     build: ./data_collector
-    container_name: data_collection_dragon_bones
-    depends_on:
-      - postgres
-    environment:
-      DB_HOST: postgres
-      DB_NAME: item_data_db
-      DB_USER: item_data_user
-      DB_PASSWORD: secure_password_123
     command: ["--item", "536"]
-    volumes:
-      - ./queue:/app/queue
+    volumes: *common-volumes
+    depends_on: *common-depends
+    environment: *common-environment
     restart: unless-stopped
     networks:
       - item_data_network
