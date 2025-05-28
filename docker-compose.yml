@@ -4,9 +4,6 @@ x-common-environment: &common-environment
   DB_USER: item_data_user
   DB_PASSWORD: secure_password_123
 
-x-common-volumes: &common-volumes
-  - ./queue:/app/queue
-
 x-common-depends: &common-depends
   - postgres
 
@@ -41,7 +38,6 @@ services:
   data_collection_blood_runes:
     build: ./data_collector
     command: ["--item", "565"]
-    volumes: *common-volumes
     depends_on: *common-depends
     environment: *common-environment
     restart: unless-stopped
@@ -51,7 +47,6 @@ services:
   data_collection_bird_nests:
     build: ./data_collector
     command: ["--item", "5075"]
-    volumes: *common-volumes
     depends_on: *common-depends
     environment: *common-environment
     restart: unless-stopped
@@ -61,7 +56,6 @@ services:
   data_collection_oak_planks:
     build: ./data_collector
     command: ["--item", "8778"]
-    volumes: *common-volumes
     depends_on: *common-depends
     environment: *common-environment
     restart: unless-stopped
@@ -71,7 +65,6 @@ services:
   data_collection_dragon_bones:
     build: ./data_collector
     command: ["--item", "536"]
-    volumes: *common-volumes
     depends_on: *common-depends
     environment: *common-environment
     restart: unless-stopped
