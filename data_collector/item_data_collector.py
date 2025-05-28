@@ -1,39 +1,49 @@
 import argparse
 import requests
 import psycopg2
-import json
 import time
 import datetime
 import logging
 import sys
 import os
 from psycopg2.extras import RealDictCursor
+from dotenv import load_dotenv
 
-# Constants
-INTERVAL_SECONDS = 600  # 10 minutes
-RETRY_ATTEMPTS = 3
-RETRY_DELAY_SECONDS = 5
-USER_AGENT = "ItemDataCollector/1.0 (zudsgaming@gmail.com)"  # Replace with your contact info
+# Load environment variables
+load_dotenv()
+
+# Setup logging
 log_file_path = "item_data.log"
-
-# Logging configuration
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(message)s",
     handlers=[
-        logging.FileHandler(log_file_path),            # Log to file
-        logging.StreamHandler(sys.stdout)              # Log to stdout (optional, for docker logs)
+        logging.FileHandler(log_file_path),
+        logging.StreamHandler(sys.stdout)
     ]
 )
 
-# Database configuration
+# Get required environment variables or fail
+def require_env(var_name):
+    value = os.getenv(var_name)
+    if not value:
+        logging.error(f"Missing required environment variable: {var_name}")
+        sys.exit(1)
+    return value
+
+# Config from env
 DB_CONFIG = {
-    "dbname": os.getenv("DB_NAME", "item_data_db"),
-    "user": os.getenv("DB_USER", "item_data_user"),
-    "password": os.getenv("DB_PASSWORD", "secure_password_123"),
-    "host": os.getenv("DB_HOST", "localhost"),
+    "dbname": require_env("DB_NAME"),
+    "user": require_env("DB_USER"),
+    "password": require_env("DB_PASSWORD"),
+    "host": require_env("DB_HOST"),
     "port": os.getenv("DB_PORT", "5432")
 }
+
+INTERVAL_SECONDS = int(os.getenv("INTERVAL_SECONDS", 600))
+RETRY_ATTEMPTS = int(os.getenv("RETRY_ATTEMPTS", 3))
+RETRY_DELAY_SECONDS = int(os.getenv("RETRY_DELAY_SECONDS", 5))
+USER_AGENT = os.getenv("USER_AGENT", "ItemDataCollector/1.0")
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Fetch OSRS item data.")
@@ -52,16 +62,16 @@ def get_db_connection():
     try:
         return psycopg2.connect(**DB_CONFIG, cursor_factory=RealDictCursor)
     except psycopg2.Error as e:
-        logging.error(f"Error connecting to database: {e}")
+        logging.error(f"Database connection error: {e}")
         return None
 
 def fetch_item_data(item_id: int):
-    api_url = f"https://prices.runescape.wiki/api/v1/osrs/timeseries?timestep=5m&id={item_id}"
+    url = f"https://prices.runescape.wiki/api/v1/osrs/timeseries?timestep=5m&id={item_id}"
     headers = {"User-Agent": USER_AGENT}
 
     for attempt in range(RETRY_ATTEMPTS):
         try:
-            response = requests.get(api_url, headers=headers, timeout=10)
+            response = requests.get(url, headers=headers, timeout=10)
             response.raise_for_status()
             data = response.json()
 
@@ -77,16 +87,17 @@ def fetch_item_data(item_id: int):
                     "fetch_time": datetime.datetime.utcnow().isoformat()
                 })
 
-            if not results:
-                logging.warning(f"No data returned for item {item_id}")
-            else:
+            if results:
                 logging.info(f"Fetched {len(results)} entries for item {item_id}")
+            else:
+                logging.warning(f"No data returned for item {item_id}")
             return results
 
         except (requests.RequestException, ValueError) as e:
-            logging.warning(f"Attempt {attempt + 1}/{RETRY_ATTEMPTS} failed: {e}")
+            logging.warning(f"Fetch attempt {attempt + 1}/{RETRY_ATTEMPTS} failed: {e}")
             if attempt < RETRY_ATTEMPTS - 1:
                 time.sleep(RETRY_DELAY_SECONDS)
+
     logging.error(f"Failed to fetch data for item {item_id} after {RETRY_ATTEMPTS} attempts.")
     return []
 
@@ -122,7 +133,7 @@ def insert_data_to_db(data_list):
                         cur.execute(query, values)
                     except psycopg2.Error as e:
                         logging.error(f"DB insert error for item {data['item_id']}: {e}")
-        logging.info(f"Inserted {len(data_list)} entries successfully.")
+        logging.info(f"Inserted {len(data_list)} entries into the database.")
     except psycopg2.Error as e:
         logging.error(f"Database operation failed: {e}")
     finally:
@@ -131,7 +142,7 @@ def insert_data_to_db(data_list):
 def main():
     args = parse_args()
     item_id = args.item_id
-    logging.info(f"Starting data fetch loop for item ID {item_id} every {INTERVAL_SECONDS} seconds.")
+    logging.info(f"Starting fetch loop for item {item_id} every {INTERVAL_SECONDS} seconds.")
 
     while True:
         try:
@@ -139,7 +150,7 @@ def main():
             insert_data_to_db(data_list)
             time.sleep(INTERVAL_SECONDS)
         except KeyboardInterrupt:
-            logging.info("User interrupted. Exiting...")
+            logging.info("Interrupted by user. Exiting.")
             break
         except Exception as e:
             logging.error(f"Unhandled error: {e}. Retrying in {INTERVAL_SECONDS} seconds...")

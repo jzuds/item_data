@@ -1,4 +1,5 @@
 import os
+from dotenv import load_dotenv
 import dash
 from dash import dcc, html
 from dash.dependencies import Input, Output
@@ -7,6 +8,9 @@ import psycopg2
 import plotly.graph_objs as go
 import datetime
 import numpy as np
+
+# Load environment variables from .env file
+load_dotenv()
 
 # Configuration
 CONFIG = {
