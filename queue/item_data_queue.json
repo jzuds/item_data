@@ -1,0 +1,3287 @@
+[
+  {
+    "item_id": 565,
+    "avg_high_price": 307,
+    "high_price_volume": 146791,
+    "avg_low_price": 301,
+    "low_price_volume": 151035,
+    "timestamp": 1746721200,
+    "fetch_time": "2025-05-09T18:47:45.017384"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 307,
+    "high_price_volume": 226241,
+    "avg_low_price": 301,
+    "low_price_volume": 115340,
+    "timestamp": 1746721500,
+    "fetch_time": "2025-05-09T18:47:45.017384"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 308,
+    "high_price_volume": 137819,
+    "avg_low_price": 302,
+    "low_price_volume": 51386,
+    "timestamp": 1746721800,
+    "fetch_time": "2025-05-09T18:47:45.017384"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 308,
+    "high_price_volume": 109155,
+    "avg_low_price": 302,
+    "low_price_volume": 126222,
+    "timestamp": 1746722100,
+    "fetch_time": "2025-05-09T18:47:45.017384"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 280,
+    "high_price_volume": 310653,
+    "avg_low_price": 301,
+    "low_price_volume": 101186,
+    "timestamp": 1746722400,
+    "fetch_time": "2025-05-09T18:47:45.017384"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 307,
+    "high_price_volume": 237246,
+    "avg_low_price": 300,
+    "low_price_volume": 99308,
+    "timestamp": 1746722700,
+    "fetch_time": "2025-05-09T18:47:45.017384"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 307,
+    "high_price_volume": 309909,
+    "avg_low_price": 301,
+    "low_price_volume": 47013,
+    "timestamp": 1746723000,
+    "fetch_time": "2025-05-09T18:47:45.017384"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 307,
+    "high_price_volume": 208923,
+    "avg_low_price": 303,
+    "low_price_volume": 49275,
+    "timestamp": 1746723300,
+    "fetch_time": "2025-05-09T18:47:45.017384"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 307,
+    "high_price_volume": 183883,
+    "avg_low_price": 303,
+    "low_price_volume": 158045,
+    "timestamp": 1746723600,
+    "fetch_time": "2025-05-09T18:47:45.017384"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 308,
+    "high_price_volume": 217858,
+    "avg_low_price": 303,
+    "low_price_volume": 27686,
+    "timestamp": 1746723900,
+    "fetch_time": "2025-05-09T18:47:45.017384"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 308,
+    "high_price_volume": 181161,
+    "avg_low_price": 304,
+    "low_price_volume": 17352,
+    "timestamp": 1746724200,
+    "fetch_time": "2025-05-09T18:47:45.017384"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 308,
+    "high_price_volume": 239759,
+    "avg_low_price": 303,
+    "low_price_volume": 98365,
+    "timestamp": 1746724500,
+    "fetch_time": "2025-05-09T18:47:45.017384"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 307,
+    "high_price_volume": 194589,
+    "avg_low_price": 303,
+    "low_price_volume": 51113,
+    "timestamp": 1746724800,
+    "fetch_time": "2025-05-09T18:47:45.017384"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 308,
+    "high_price_volume": 86255,
+    "avg_low_price": 302,
+    "low_price_volume": 34458,
+    "timestamp": 1746725100,
+    "fetch_time": "2025-05-09T18:47:45.017384"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 307,
+    "high_price_volume": 165986,
+    "avg_low_price": 304,
+    "low_price_volume": 38806,
+    "timestamp": 1746725400,
+    "fetch_time": "2025-05-09T18:47:45.017384"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 308,
+    "high_price_volume": 180311,
+    "avg_low_price": 303,
+    "low_price_volume": 133238,
+    "timestamp": 1746725700,
+    "fetch_time": "2025-05-09T18:47:45.017384"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 308,
+    "high_price_volume": 202618,
+    "avg_low_price": 306,
+    "low_price_volume": 208433,
+    "timestamp": 1746726000,
+    "fetch_time": "2025-05-09T18:47:45.017384"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 307,
+    "high_price_volume": 162200,
+    "avg_low_price": 306,
+    "low_price_volume": 157626,
+    "timestamp": 1746726300,
+    "fetch_time": "2025-05-09T18:47:45.017384"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 309,
+    "high_price_volume": 240573,
+    "avg_low_price": 302,
+    "low_price_volume": 175600,
+    "timestamp": 1746726600,
+    "fetch_time": "2025-05-09T18:47:45.017384"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 308,
+    "high_price_volume": 43550,
+    "avg_low_price": 303,
+    "low_price_volume": 91136,
+    "timestamp": 1746726900,
+    "fetch_time": "2025-05-09T18:47:45.017384"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 309,
+    "high_price_volume": 167704,
+    "avg_low_price": 303,
+    "low_price_volume": 110792,
+    "timestamp": 1746727200,
+    "fetch_time": "2025-05-09T18:47:45.017384"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 309,
+    "high_price_volume": 73538,
+    "avg_low_price": 305,
+    "low_price_volume": 43089,
+    "timestamp": 1746727500,
+    "fetch_time": "2025-05-09T18:47:45.017384"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 309,
+    "high_price_volume": 47562,
+    "avg_low_price": 305,
+    "low_price_volume": 70115,
+    "timestamp": 1746727800,
+    "fetch_time": "2025-05-09T18:47:45.017384"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 309,
+    "high_price_volume": 52691,
+    "avg_low_price": 306,
+    "low_price_volume": 79072,
+    "timestamp": 1746728100,
+    "fetch_time": "2025-05-09T18:47:45.017384"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 308,
+    "high_price_volume": 231132,
+    "avg_low_price": 303,
+    "low_price_volume": 35916,
+    "timestamp": 1746728400,
+    "fetch_time": "2025-05-09T18:47:45.017384"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 308,
+    "high_price_volume": 140628,
+    "avg_low_price": 302,
+    "low_price_volume": 52929,
+    "timestamp": 1746728700,
+    "fetch_time": "2025-05-09T18:47:45.017384"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 308,
+    "high_price_volume": 232645,
+    "avg_low_price": 304,
+    "low_price_volume": 60338,
+    "timestamp": 1746729000,
+    "fetch_time": "2025-05-09T18:47:45.017384"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 308,
+    "high_price_volume": 274990,
+    "avg_low_price": 303,
+    "low_price_volume": 34823,
+    "timestamp": 1746729300,
+    "fetch_time": "2025-05-09T18:47:45.017384"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 308,
+    "high_price_volume": 207128,
+    "avg_low_price": 305,
+    "low_price_volume": 27040,
+    "timestamp": 1746729600,
+    "fetch_time": "2025-05-09T18:47:45.017384"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 309,
+    "high_price_volume": 87254,
+    "avg_low_price": 303,
+    "low_price_volume": 64841,
+    "timestamp": 1746729900,
+    "fetch_time": "2025-05-09T18:47:45.017384"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 305,
+    "high_price_volume": 351682,
+    "avg_low_price": 303,
+    "low_price_volume": 89291,
+    "timestamp": 1746730200,
+    "fetch_time": "2025-05-09T18:47:45.017384"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 307,
+    "high_price_volume": 193835,
+    "avg_low_price": 301,
+    "low_price_volume": 122353,
+    "timestamp": 1746730500,
+    "fetch_time": "2025-05-09T18:47:45.017384"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 306,
+    "high_price_volume": 186415,
+    "avg_low_price": 302,
+    "low_price_volume": 92089,
+    "timestamp": 1746730800,
+    "fetch_time": "2025-05-09T18:47:45.017384"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 308,
+    "high_price_volume": 109984,
+    "avg_low_price": 302,
+    "low_price_volume": 56238,
+    "timestamp": 1746731100,
+    "fetch_time": "2025-05-09T18:47:45.017384"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 308,
+    "high_price_volume": 131652,
+    "avg_low_price": 299,
+    "low_price_volume": 838481,
+    "timestamp": 1746731400,
+    "fetch_time": "2025-05-09T18:47:45.017384"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 307,
+    "high_price_volume": 100560,
+    "avg_low_price": 304,
+    "low_price_volume": 96084,
+    "timestamp": 1746731700,
+    "fetch_time": "2025-05-09T18:47:45.017384"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 307,
+    "high_price_volume": 170526,
+    "avg_low_price": 300,
+    "low_price_volume": 349706,
+    "timestamp": 1746732000,
+    "fetch_time": "2025-05-09T18:47:45.017384"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 308,
+    "high_price_volume": 41921,
+    "avg_low_price": 305,
+    "low_price_volume": 38573,
+    "timestamp": 1746732300,
+    "fetch_time": "2025-05-09T18:47:45.017384"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 308,
+    "high_price_volume": 115985,
+    "avg_low_price": 304,
+    "low_price_volume": 78260,
+    "timestamp": 1746732600,
+    "fetch_time": "2025-05-09T18:47:45.017384"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 309,
+    "high_price_volume": 67857,
+    "avg_low_price": 304,
+    "low_price_volume": 91463,
+    "timestamp": 1746732900,
+    "fetch_time": "2025-05-09T18:47:45.017384"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 308,
+    "high_price_volume": 48795,
+    "avg_low_price": 305,
+    "low_price_volume": 87755,
+    "timestamp": 1746733200,
+    "fetch_time": "2025-05-09T18:47:45.017384"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 305,
+    "high_price_volume": 138383,
+    "avg_low_price": 305,
+    "low_price_volume": 34496,
+    "timestamp": 1746733500,
+    "fetch_time": "2025-05-09T18:47:45.017384"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 309,
+    "high_price_volume": 91291,
+    "avg_low_price": 305,
+    "low_price_volume": 13369,
+    "timestamp": 1746733800,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 308,
+    "high_price_volume": 98174,
+    "avg_low_price": 305,
+    "low_price_volume": 285552,
+    "timestamp": 1746734100,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 309,
+    "high_price_volume": 51920,
+    "avg_low_price": 306,
+    "low_price_volume": 58540,
+    "timestamp": 1746734400,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 309,
+    "high_price_volume": 93860,
+    "avg_low_price": 304,
+    "low_price_volume": 167181,
+    "timestamp": 1746734700,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 309,
+    "high_price_volume": 87564,
+    "avg_low_price": 306,
+    "low_price_volume": 39468,
+    "timestamp": 1746735000,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 307,
+    "high_price_volume": 178352,
+    "avg_low_price": 304,
+    "low_price_volume": 99877,
+    "timestamp": 1746735300,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 308,
+    "high_price_volume": 60126,
+    "avg_low_price": 304,
+    "low_price_volume": 39433,
+    "timestamp": 1746735600,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 309,
+    "high_price_volume": 123859,
+    "avg_low_price": 304,
+    "low_price_volume": 108068,
+    "timestamp": 1746735900,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 306,
+    "high_price_volume": 148237,
+    "avg_low_price": 303,
+    "low_price_volume": 140930,
+    "timestamp": 1746736200,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 306,
+    "high_price_volume": 167664,
+    "avg_low_price": 302,
+    "low_price_volume": 97309,
+    "timestamp": 1746736500,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 307,
+    "high_price_volume": 117824,
+    "avg_low_price": 303,
+    "low_price_volume": 112679,
+    "timestamp": 1746736800,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 307,
+    "high_price_volume": 76606,
+    "avg_low_price": 304,
+    "low_price_volume": 29302,
+    "timestamp": 1746737100,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 306,
+    "high_price_volume": 588909,
+    "avg_low_price": 306,
+    "low_price_volume": 104413,
+    "timestamp": 1746737400,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 306,
+    "high_price_volume": 247964,
+    "avg_low_price": 302,
+    "low_price_volume": 49583,
+    "timestamp": 1746737700,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 307,
+    "high_price_volume": 315596,
+    "avg_low_price": 303,
+    "low_price_volume": 50045,
+    "timestamp": 1746738000,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 308,
+    "high_price_volume": 160207,
+    "avg_low_price": 304,
+    "low_price_volume": 57432,
+    "timestamp": 1746738300,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 309,
+    "high_price_volume": 125126,
+    "avg_low_price": 306,
+    "low_price_volume": 53909,
+    "timestamp": 1746738600,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 309,
+    "high_price_volume": 123096,
+    "avg_low_price": 305,
+    "low_price_volume": 60163,
+    "timestamp": 1746738900,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 308,
+    "high_price_volume": 81746,
+    "avg_low_price": 304,
+    "low_price_volume": 106558,
+    "timestamp": 1746739200,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 308,
+    "high_price_volume": 177338,
+    "avg_low_price": 304,
+    "low_price_volume": 76210,
+    "timestamp": 1746739500,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 309,
+    "high_price_volume": 198119,
+    "avg_low_price": 303,
+    "low_price_volume": 79580,
+    "timestamp": 1746739800,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 308,
+    "high_price_volume": 100766,
+    "avg_low_price": 305,
+    "low_price_volume": 105759,
+    "timestamp": 1746740100,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 308,
+    "high_price_volume": 70385,
+    "avg_low_price": 307,
+    "low_price_volume": 44462,
+    "timestamp": 1746740400,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 307,
+    "high_price_volume": 143593,
+    "avg_low_price": 303,
+    "low_price_volume": 48767,
+    "timestamp": 1746740700,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 309,
+    "high_price_volume": 201864,
+    "avg_low_price": 303,
+    "low_price_volume": 296094,
+    "timestamp": 1746741000,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 307,
+    "high_price_volume": 92654,
+    "avg_low_price": 304,
+    "low_price_volume": 63880,
+    "timestamp": 1746741300,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 307,
+    "high_price_volume": 159415,
+    "avg_low_price": 303,
+    "low_price_volume": 53899,
+    "timestamp": 1746741600,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 307,
+    "high_price_volume": 130831,
+    "avg_low_price": 307,
+    "low_price_volume": 76616,
+    "timestamp": 1746741900,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 309,
+    "high_price_volume": 193005,
+    "avg_low_price": 305,
+    "low_price_volume": 50895,
+    "timestamp": 1746742200,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 306,
+    "high_price_volume": 110624,
+    "avg_low_price": 302,
+    "low_price_volume": 210557,
+    "timestamp": 1746742500,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 306,
+    "high_price_volume": 87171,
+    "avg_low_price": 303,
+    "low_price_volume": 36354,
+    "timestamp": 1746742800,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 306,
+    "high_price_volume": 310129,
+    "avg_low_price": 303,
+    "low_price_volume": 84590,
+    "timestamp": 1746743100,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 306,
+    "high_price_volume": 253502,
+    "avg_low_price": 302,
+    "low_price_volume": 57244,
+    "timestamp": 1746743400,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 308,
+    "high_price_volume": 105848,
+    "avg_low_price": 305,
+    "low_price_volume": 30756,
+    "timestamp": 1746743700,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 307,
+    "high_price_volume": 213354,
+    "avg_low_price": 302,
+    "low_price_volume": 28788,
+    "timestamp": 1746744000,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 307,
+    "high_price_volume": 81140,
+    "avg_low_price": 303,
+    "low_price_volume": 44586,
+    "timestamp": 1746744300,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 308,
+    "high_price_volume": 168557,
+    "avg_low_price": 303,
+    "low_price_volume": 52760,
+    "timestamp": 1746744600,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 307,
+    "high_price_volume": 105806,
+    "avg_low_price": 301,
+    "low_price_volume": 122126,
+    "timestamp": 1746744900,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 307,
+    "high_price_volume": 57272,
+    "avg_low_price": 302,
+    "low_price_volume": 18863,
+    "timestamp": 1746745200,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 307,
+    "high_price_volume": 358794,
+    "avg_low_price": 302,
+    "low_price_volume": 59059,
+    "timestamp": 1746745500,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 307,
+    "high_price_volume": 170958,
+    "avg_low_price": 303,
+    "low_price_volume": 22870,
+    "timestamp": 1746745800,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 307,
+    "high_price_volume": 239291,
+    "avg_low_price": 304,
+    "low_price_volume": 40735,
+    "timestamp": 1746746100,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 307,
+    "high_price_volume": 131797,
+    "avg_low_price": 306,
+    "low_price_volume": 36133,
+    "timestamp": 1746746400,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 309,
+    "high_price_volume": 111913,
+    "avg_low_price": 305,
+    "low_price_volume": 51545,
+    "timestamp": 1746746700,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 305,
+    "high_price_volume": 250089,
+    "avg_low_price": 301,
+    "low_price_volume": 171112,
+    "timestamp": 1746747000,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 306,
+    "high_price_volume": 465095,
+    "avg_low_price": 302,
+    "low_price_volume": 9949,
+    "timestamp": 1746747300,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 306,
+    "high_price_volume": 149404,
+    "avg_low_price": 301,
+    "low_price_volume": 51003,
+    "timestamp": 1746747600,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 306,
+    "high_price_volume": 54828,
+    "avg_low_price": 302,
+    "low_price_volume": 71570,
+    "timestamp": 1746747900,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 307,
+    "high_price_volume": 253917,
+    "avg_low_price": 302,
+    "low_price_volume": 125693,
+    "timestamp": 1746748200,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 306,
+    "high_price_volume": 221980,
+    "avg_low_price": 302,
+    "low_price_volume": 62858,
+    "timestamp": 1746748500,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 307,
+    "high_price_volume": 99602,
+    "avg_low_price": 302,
+    "low_price_volume": 46894,
+    "timestamp": 1746748800,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 307,
+    "high_price_volume": 81701,
+    "avg_low_price": 303,
+    "low_price_volume": 25652,
+    "timestamp": 1746749100,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 308,
+    "high_price_volume": 99036,
+    "avg_low_price": 303,
+    "low_price_volume": 47466,
+    "timestamp": 1746749400,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 308,
+    "high_price_volume": 65891,
+    "avg_low_price": 302,
+    "low_price_volume": 123316,
+    "timestamp": 1746749700,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 306,
+    "high_price_volume": 152955,
+    "avg_low_price": 303,
+    "low_price_volume": 49575,
+    "timestamp": 1746750000,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 303,
+    "high_price_volume": 259994,
+    "avg_low_price": 303,
+    "low_price_volume": 181831,
+    "timestamp": 1746750300,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 307,
+    "high_price_volume": 196447,
+    "avg_low_price": 303,
+    "low_price_volume": 28137,
+    "timestamp": 1746750600,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 308,
+    "high_price_volume": 92623,
+    "avg_low_price": 305,
+    "low_price_volume": 49650,
+    "timestamp": 1746750900,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 306,
+    "high_price_volume": 120921,
+    "avg_low_price": 302,
+    "low_price_volume": 35729,
+    "timestamp": 1746751200,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 306,
+    "high_price_volume": 228546,
+    "avg_low_price": 302,
+    "low_price_volume": 42794,
+    "timestamp": 1746751500,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 306,
+    "high_price_volume": 290829,
+    "avg_low_price": 303,
+    "low_price_volume": 25048,
+    "timestamp": 1746751800,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 305,
+    "high_price_volume": 147980,
+    "avg_low_price": 301,
+    "low_price_volume": 49202,
+    "timestamp": 1746752100,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 306,
+    "high_price_volume": 255327,
+    "avg_low_price": 302,
+    "low_price_volume": 144517,
+    "timestamp": 1746752400,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 304,
+    "high_price_volume": 374908,
+    "avg_low_price": 300,
+    "low_price_volume": 97585,
+    "timestamp": 1746752700,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 304,
+    "high_price_volume": 363369,
+    "avg_low_price": 300,
+    "low_price_volume": 55684,
+    "timestamp": 1746753000,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 305,
+    "high_price_volume": 406595,
+    "avg_low_price": 300,
+    "low_price_volume": 181614,
+    "timestamp": 1746753300,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 306,
+    "high_price_volume": 262637,
+    "avg_low_price": 303,
+    "low_price_volume": 81148,
+    "timestamp": 1746753600,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 306,
+    "high_price_volume": 281430,
+    "avg_low_price": 301,
+    "low_price_volume": 55346,
+    "timestamp": 1746753900,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 307,
+    "high_price_volume": 181232,
+    "avg_low_price": 300,
+    "low_price_volume": 36655,
+    "timestamp": 1746754200,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 306,
+    "high_price_volume": 338820,
+    "avg_low_price": 302,
+    "low_price_volume": 90778,
+    "timestamp": 1746754500,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 306,
+    "high_price_volume": 405646,
+    "avg_low_price": 300,
+    "low_price_volume": 250288,
+    "timestamp": 1746754800,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 306,
+    "high_price_volume": 290348,
+    "avg_low_price": 300,
+    "low_price_volume": 120910,
+    "timestamp": 1746755100,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 307,
+    "high_price_volume": 282917,
+    "avg_low_price": 301,
+    "low_price_volume": 92742,
+    "timestamp": 1746755400,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 306,
+    "high_price_volume": 363558,
+    "avg_low_price": 302,
+    "low_price_volume": 45642,
+    "timestamp": 1746755700,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 306,
+    "high_price_volume": 292799,
+    "avg_low_price": 300,
+    "low_price_volume": 63241,
+    "timestamp": 1746756000,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 306,
+    "high_price_volume": 295437,
+    "avg_low_price": 301,
+    "low_price_volume": 36405,
+    "timestamp": 1746756300,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 307,
+    "high_price_volume": 103737,
+    "avg_low_price": 305,
+    "low_price_volume": 43974,
+    "timestamp": 1746756600,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 308,
+    "high_price_volume": 151870,
+    "avg_low_price": 304,
+    "low_price_volume": 73504,
+    "timestamp": 1746756900,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 307,
+    "high_price_volume": 99969,
+    "avg_low_price": 304,
+    "low_price_volume": 50363,
+    "timestamp": 1746757200,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 304,
+    "high_price_volume": 355953,
+    "avg_low_price": 304,
+    "low_price_volume": 54909,
+    "timestamp": 1746757500,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 303,
+    "high_price_volume": 365208,
+    "avg_low_price": 300,
+    "low_price_volume": 161239,
+    "timestamp": 1746757800,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 305,
+    "high_price_volume": 212372,
+    "avg_low_price": 300,
+    "low_price_volume": 70127,
+    "timestamp": 1746758100,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 305,
+    "high_price_volume": 210360,
+    "avg_low_price": 301,
+    "low_price_volume": 56674,
+    "timestamp": 1746758400,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 306,
+    "high_price_volume": 68082,
+    "avg_low_price": 301,
+    "low_price_volume": 59856,
+    "timestamp": 1746758700,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 306,
+    "high_price_volume": 188034,
+    "avg_low_price": 302,
+    "low_price_volume": 55630,
+    "timestamp": 1746759000,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 303,
+    "high_price_volume": 103209,
+    "avg_low_price": 301,
+    "low_price_volume": 35674,
+    "timestamp": 1746759300,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 305,
+    "high_price_volume": 141682,
+    "avg_low_price": 302,
+    "low_price_volume": 53025,
+    "timestamp": 1746759600,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 305,
+    "high_price_volume": 94231,
+    "avg_low_price": 300,
+    "low_price_volume": 237680,
+    "timestamp": 1746759900,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 306,
+    "high_price_volume": 148130,
+    "avg_low_price": 300,
+    "low_price_volume": 68085,
+    "timestamp": 1746760200,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 304,
+    "high_price_volume": 204847,
+    "avg_low_price": 300,
+    "low_price_volume": 56298,
+    "timestamp": 1746760500,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 305,
+    "high_price_volume": 135549,
+    "avg_low_price": 300,
+    "low_price_volume": 143428,
+    "timestamp": 1746760800,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 303,
+    "high_price_volume": 194950,
+    "avg_low_price": 300,
+    "low_price_volume": 43396,
+    "timestamp": 1746761100,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 304,
+    "high_price_volume": 173414,
+    "avg_low_price": 302,
+    "low_price_volume": 35499,
+    "timestamp": 1746761400,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 306,
+    "high_price_volume": 235198,
+    "avg_low_price": 300,
+    "low_price_volume": 69309,
+    "timestamp": 1746761700,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 306,
+    "high_price_volume": 97902,
+    "avg_low_price": 302,
+    "low_price_volume": 76569,
+    "timestamp": 1746762000,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 306,
+    "high_price_volume": 143930,
+    "avg_low_price": 303,
+    "low_price_volume": 71716,
+    "timestamp": 1746762300,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 307,
+    "high_price_volume": 125445,
+    "avg_low_price": 304,
+    "low_price_volume": 42524,
+    "timestamp": 1746762600,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 307,
+    "high_price_volume": 62143,
+    "avg_low_price": 303,
+    "low_price_volume": 97945,
+    "timestamp": 1746762900,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 306,
+    "high_price_volume": 137711,
+    "avg_low_price": 304,
+    "low_price_volume": 38437,
+    "timestamp": 1746763200,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 307,
+    "high_price_volume": 14994,
+    "avg_low_price": 305,
+    "low_price_volume": 78688,
+    "timestamp": 1746763500,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 307,
+    "high_price_volume": 52502,
+    "avg_low_price": 304,
+    "low_price_volume": 116722,
+    "timestamp": 1746763800,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 306,
+    "high_price_volume": 181613,
+    "avg_low_price": 300,
+    "low_price_volume": 90277,
+    "timestamp": 1746764100,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 307,
+    "high_price_volume": 119695,
+    "avg_low_price": 303,
+    "low_price_volume": 63784,
+    "timestamp": 1746764400,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 306,
+    "high_price_volume": 9003,
+    "avg_low_price": 301,
+    "low_price_volume": 36677,
+    "timestamp": 1746764700,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 306,
+    "high_price_volume": 79458,
+    "avg_low_price": 301,
+    "low_price_volume": 86622,
+    "timestamp": 1746765000,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 305,
+    "high_price_volume": 36538,
+    "avg_low_price": 301,
+    "low_price_volume": 35182,
+    "timestamp": 1746765300,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 307,
+    "high_price_volume": 94596,
+    "avg_low_price": 300,
+    "low_price_volume": 38231,
+    "timestamp": 1746765600,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 306,
+    "high_price_volume": 78224,
+    "avg_low_price": 303,
+    "low_price_volume": 30188,
+    "timestamp": 1746765900,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 307,
+    "high_price_volume": 82053,
+    "avg_low_price": 304,
+    "low_price_volume": 21539,
+    "timestamp": 1746766200,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 307,
+    "high_price_volume": 41413,
+    "avg_low_price": 302,
+    "low_price_volume": 27474,
+    "timestamp": 1746766500,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 306,
+    "high_price_volume": 57109,
+    "avg_low_price": 303,
+    "low_price_volume": 27943,
+    "timestamp": 1746766800,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 306,
+    "high_price_volume": 33276,
+    "avg_low_price": 302,
+    "low_price_volume": 7348,
+    "timestamp": 1746767100,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 306,
+    "high_price_volume": 25191,
+    "avg_low_price": 301,
+    "low_price_volume": 40390,
+    "timestamp": 1746767400,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 305,
+    "high_price_volume": 54065,
+    "avg_low_price": 300,
+    "low_price_volume": 138594,
+    "timestamp": 1746767700,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 305,
+    "high_price_volume": 54169,
+    "avg_low_price": 300,
+    "low_price_volume": 25650,
+    "timestamp": 1746768000,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 306,
+    "high_price_volume": 184139,
+    "avg_low_price": 300,
+    "low_price_volume": 17944,
+    "timestamp": 1746768300,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 306,
+    "high_price_volume": 141712,
+    "avg_low_price": 300,
+    "low_price_volume": 18974,
+    "timestamp": 1746768600,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 305,
+    "high_price_volume": 372487,
+    "avg_low_price": 299,
+    "low_price_volume": 198590,
+    "timestamp": 1746768900,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 305,
+    "high_price_volume": 102989,
+    "avg_low_price": 300,
+    "low_price_volume": 103218,
+    "timestamp": 1746769200,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 305,
+    "high_price_volume": 221862,
+    "avg_low_price": 300,
+    "low_price_volume": 43332,
+    "timestamp": 1746769500,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 305,
+    "high_price_volume": 251237,
+    "avg_low_price": 300,
+    "low_price_volume": 30875,
+    "timestamp": 1746769800,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 306,
+    "high_price_volume": 67742,
+    "avg_low_price": 300,
+    "low_price_volume": 32285,
+    "timestamp": 1746770100,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 306,
+    "high_price_volume": 139300,
+    "avg_low_price": 300,
+    "low_price_volume": 52533,
+    "timestamp": 1746770400,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 305,
+    "high_price_volume": 138465,
+    "avg_low_price": 300,
+    "low_price_volume": 170268,
+    "timestamp": 1746770700,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 305,
+    "high_price_volume": 301837,
+    "avg_low_price": 301,
+    "low_price_volume": 76367,
+    "timestamp": 1746771000,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 305,
+    "high_price_volume": 216261,
+    "avg_low_price": 299,
+    "low_price_volume": 32114,
+    "timestamp": 1746771300,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 305,
+    "high_price_volume": 413444,
+    "avg_low_price": 299,
+    "low_price_volume": 151083,
+    "timestamp": 1746771600,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 305,
+    "high_price_volume": 295606,
+    "avg_low_price": 300,
+    "low_price_volume": 104024,
+    "timestamp": 1746771900,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 303,
+    "high_price_volume": 210142,
+    "avg_low_price": 300,
+    "low_price_volume": 24147,
+    "timestamp": 1746772200,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 305,
+    "high_price_volume": 79577,
+    "avg_low_price": 300,
+    "low_price_volume": 42280,
+    "timestamp": 1746772500,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 305,
+    "high_price_volume": 56832,
+    "avg_low_price": 301,
+    "low_price_volume": 33294,
+    "timestamp": 1746772800,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 306,
+    "high_price_volume": 66476,
+    "avg_low_price": 301,
+    "low_price_volume": 61889,
+    "timestamp": 1746773100,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 305,
+    "high_price_volume": 194179,
+    "avg_low_price": 300,
+    "low_price_volume": 79365,
+    "timestamp": 1746773400,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 306,
+    "high_price_volume": 52689,
+    "avg_low_price": 300,
+    "low_price_volume": 16539,
+    "timestamp": 1746773700,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 306,
+    "high_price_volume": 63928,
+    "avg_low_price": 300,
+    "low_price_volume": 25957,
+    "timestamp": 1746774000,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 305,
+    "high_price_volume": 60859,
+    "avg_low_price": 300,
+    "low_price_volume": 24758,
+    "timestamp": 1746774300,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 301,
+    "high_price_volume": 241285,
+    "avg_low_price": 300,
+    "low_price_volume": 5571,
+    "timestamp": 1746774600,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 305,
+    "high_price_volume": 136491,
+    "avg_low_price": 300,
+    "low_price_volume": 84499,
+    "timestamp": 1746774900,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 305,
+    "high_price_volume": 111769,
+    "avg_low_price": 301,
+    "low_price_volume": 37212,
+    "timestamp": 1746775200,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 306,
+    "high_price_volume": 97904,
+    "avg_low_price": 301,
+    "low_price_volume": 50899,
+    "timestamp": 1746775500,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 305,
+    "high_price_volume": 92238,
+    "avg_low_price": 304,
+    "low_price_volume": 37411,
+    "timestamp": 1746775800,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 305,
+    "high_price_volume": 12352,
+    "avg_low_price": 300,
+    "low_price_volume": 7936,
+    "timestamp": 1746776100,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 303,
+    "high_price_volume": 63653,
+    "avg_low_price": 300,
+    "low_price_volume": 43816,
+    "timestamp": 1746776400,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 303,
+    "high_price_volume": 139137,
+    "avg_low_price": 300,
+    "low_price_volume": 56270,
+    "timestamp": 1746776700,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 305,
+    "high_price_volume": 158023,
+    "avg_low_price": 300,
+    "low_price_volume": 155839,
+    "timestamp": 1746777000,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 305,
+    "high_price_volume": 15322,
+    "avg_low_price": 301,
+    "low_price_volume": 22718,
+    "timestamp": 1746777300,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 304,
+    "high_price_volume": 33663,
+    "avg_low_price": 301,
+    "low_price_volume": 10202,
+    "timestamp": 1746777600,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 305,
+    "high_price_volume": 20344,
+    "avg_low_price": 300,
+    "low_price_volume": 56758,
+    "timestamp": 1746777900,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 306,
+    "high_price_volume": 67724,
+    "avg_low_price": 300,
+    "low_price_volume": 53289,
+    "timestamp": 1746778200,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 306,
+    "high_price_volume": 135555,
+    "avg_low_price": 302,
+    "low_price_volume": 47795,
+    "timestamp": 1746778500,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 306,
+    "high_price_volume": 78863,
+    "avg_low_price": 301,
+    "low_price_volume": 15279,
+    "timestamp": 1746778800,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 306,
+    "high_price_volume": 87625,
+    "avg_low_price": 301,
+    "low_price_volume": 34681,
+    "timestamp": 1746779100,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 305,
+    "high_price_volume": 124110,
+    "avg_low_price": 300,
+    "low_price_volume": 26286,
+    "timestamp": 1746779400,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 303,
+    "high_price_volume": 93343,
+    "avg_low_price": 302,
+    "low_price_volume": 12602,
+    "timestamp": 1746779700,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 302,
+    "high_price_volume": 205252,
+    "avg_low_price": 300,
+    "low_price_volume": 75396,
+    "timestamp": 1746780000,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 303,
+    "high_price_volume": 159920,
+    "avg_low_price": 298,
+    "low_price_volume": 218504,
+    "timestamp": 1746780300,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 304,
+    "high_price_volume": 73050,
+    "avg_low_price": 300,
+    "low_price_volume": 31317,
+    "timestamp": 1746780600,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 305,
+    "high_price_volume": 44379,
+    "avg_low_price": 298,
+    "low_price_volume": 132056,
+    "timestamp": 1746780900,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 305,
+    "high_price_volume": 54767,
+    "avg_low_price": 300,
+    "low_price_volume": 5810,
+    "timestamp": 1746781200,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 306,
+    "high_price_volume": 31921,
+    "avg_low_price": 300,
+    "low_price_volume": 28465,
+    "timestamp": 1746781500,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 302,
+    "high_price_volume": 166420,
+    "avg_low_price": 299,
+    "low_price_volume": 20455,
+    "timestamp": 1746781800,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 302,
+    "high_price_volume": 267176,
+    "avg_low_price": 300,
+    "low_price_volume": 10325,
+    "timestamp": 1746782100,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 303,
+    "high_price_volume": 184203,
+    "avg_low_price": 299,
+    "low_price_volume": 10142,
+    "timestamp": 1746782400,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 303,
+    "high_price_volume": 112278,
+    "avg_low_price": 299,
+    "low_price_volume": 56237,
+    "timestamp": 1746782700,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 300,
+    "high_price_volume": 76270,
+    "avg_low_price": 298,
+    "low_price_volume": 43923,
+    "timestamp": 1746783000,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 303,
+    "high_price_volume": 122741,
+    "avg_low_price": 299,
+    "low_price_volume": 9470,
+    "timestamp": 1746783300,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 304,
+    "high_price_volume": 123756,
+    "avg_low_price": 299,
+    "low_price_volume": 15537,
+    "timestamp": 1746783600,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 304,
+    "high_price_volume": 221865,
+    "avg_low_price": 300,
+    "low_price_volume": 17235,
+    "timestamp": 1746783900,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 305,
+    "high_price_volume": 104762,
+    "avg_low_price": 300,
+    "low_price_volume": 25277,
+    "timestamp": 1746784200,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 304,
+    "high_price_volume": 189515,
+    "avg_low_price": 298,
+    "low_price_volume": 46099,
+    "timestamp": 1746784500,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 304,
+    "high_price_volume": 66751,
+    "avg_low_price": 299,
+    "low_price_volume": 39680,
+    "timestamp": 1746784800,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 305,
+    "high_price_volume": 69475,
+    "avg_low_price": 300,
+    "low_price_volume": 19343,
+    "timestamp": 1746785100,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 306,
+    "high_price_volume": 60015,
+    "avg_low_price": 300,
+    "low_price_volume": 1345,
+    "timestamp": 1746785400,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 304,
+    "high_price_volume": 73470,
+    "avg_low_price": 300,
+    "low_price_volume": 49109,
+    "timestamp": 1746785700,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 303,
+    "high_price_volume": 54358,
+    "avg_low_price": 299,
+    "low_price_volume": 42454,
+    "timestamp": 1746786000,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 304,
+    "high_price_volume": 219556,
+    "avg_low_price": 300,
+    "low_price_volume": 41722,
+    "timestamp": 1746786300,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 305,
+    "high_price_volume": 79437,
+    "avg_low_price": 301,
+    "low_price_volume": 68157,
+    "timestamp": 1746786600,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 304,
+    "high_price_volume": 175652,
+    "avg_low_price": 300,
+    "low_price_volume": 21680,
+    "timestamp": 1746786900,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 305,
+    "high_price_volume": 42718,
+    "avg_low_price": 300,
+    "low_price_volume": 48297,
+    "timestamp": 1746787200,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 306,
+    "high_price_volume": 60808,
+    "avg_low_price": 300,
+    "low_price_volume": 55135,
+    "timestamp": 1746787500,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 305,
+    "high_price_volume": 182699,
+    "avg_low_price": 300,
+    "low_price_volume": 62879,
+    "timestamp": 1746787800,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 305,
+    "high_price_volume": 76484,
+    "avg_low_price": 300,
+    "low_price_volume": 17078,
+    "timestamp": 1746788100,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 305,
+    "high_price_volume": 138521,
+    "avg_low_price": 299,
+    "low_price_volume": 199173,
+    "timestamp": 1746788400,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 305,
+    "high_price_volume": 150405,
+    "avg_low_price": 297,
+    "low_price_volume": 45995,
+    "timestamp": 1746788700,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 305,
+    "high_price_volume": 33148,
+    "avg_low_price": 300,
+    "low_price_volume": 147283,
+    "timestamp": 1746789000,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 300,
+    "high_price_volume": 375054,
+    "avg_low_price": 298,
+    "low_price_volume": 34710,
+    "timestamp": 1746789300,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 303,
+    "high_price_volume": 199668,
+    "avg_low_price": 299,
+    "low_price_volume": 35020,
+    "timestamp": 1746789600,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 302,
+    "high_price_volume": 187633,
+    "avg_low_price": 297,
+    "low_price_volume": 14047,
+    "timestamp": 1746789900,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 302,
+    "high_price_volume": 115097,
+    "avg_low_price": 296,
+    "low_price_volume": 232887,
+    "timestamp": 1746790200,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 304,
+    "high_price_volume": 172768,
+    "avg_low_price": 300,
+    "low_price_volume": 40384,
+    "timestamp": 1746790500,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 302,
+    "high_price_volume": 246136,
+    "avg_low_price": 300,
+    "low_price_volume": 92468,
+    "timestamp": 1746790800,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 304,
+    "high_price_volume": 128483,
+    "avg_low_price": 301,
+    "low_price_volume": 80185,
+    "timestamp": 1746791100,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 304,
+    "high_price_volume": 227436,
+    "avg_low_price": 300,
+    "low_price_volume": 40828,
+    "timestamp": 1746791400,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 305,
+    "high_price_volume": 165390,
+    "avg_low_price": 299,
+    "low_price_volume": 49673,
+    "timestamp": 1746791700,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 305,
+    "high_price_volume": 124361,
+    "avg_low_price": 297,
+    "low_price_volume": 72494,
+    "timestamp": 1746792000,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 305,
+    "high_price_volume": 113447,
+    "avg_low_price": 298,
+    "low_price_volume": 67197,
+    "timestamp": 1746792300,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 302,
+    "high_price_volume": 207794,
+    "avg_low_price": 298,
+    "low_price_volume": 83995,
+    "timestamp": 1746792600,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 306,
+    "high_price_volume": 64046,
+    "avg_low_price": 298,
+    "low_price_volume": 28226,
+    "timestamp": 1746792900,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 305,
+    "high_price_volume": 196053,
+    "avg_low_price": 300,
+    "low_price_volume": 7846,
+    "timestamp": 1746793200,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 306,
+    "high_price_volume": 60080,
+    "avg_low_price": 299,
+    "low_price_volume": 34207,
+    "timestamp": 1746793500,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 305,
+    "high_price_volume": 65902,
+    "avg_low_price": 300,
+    "low_price_volume": 32925,
+    "timestamp": 1746793800,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 301,
+    "high_price_volume": 337619,
+    "avg_low_price": 298,
+    "low_price_volume": 124146,
+    "timestamp": 1746794100,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 300,
+    "high_price_volume": 232790,
+    "avg_low_price": 298,
+    "low_price_volume": 44319,
+    "timestamp": 1746794400,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 300,
+    "high_price_volume": 291028,
+    "avg_low_price": 297,
+    "low_price_volume": 47018,
+    "timestamp": 1746794700,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 300,
+    "high_price_volume": 341372,
+    "avg_low_price": 295,
+    "low_price_volume": 88840,
+    "timestamp": 1746795000,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 302,
+    "high_price_volume": 153292,
+    "avg_low_price": 296,
+    "low_price_volume": 31142,
+    "timestamp": 1746795300,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 305,
+    "high_price_volume": 132887,
+    "avg_low_price": 299,
+    "low_price_volume": 24031,
+    "timestamp": 1746795600,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 304,
+    "high_price_volume": 97863,
+    "avg_low_price": 299,
+    "low_price_volume": 20672,
+    "timestamp": 1746795900,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 304,
+    "high_price_volume": 83653,
+    "avg_low_price": 298,
+    "low_price_volume": 49990,
+    "timestamp": 1746796200,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 304,
+    "high_price_volume": 103873,
+    "avg_low_price": 299,
+    "low_price_volume": 42243,
+    "timestamp": 1746796500,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 306,
+    "high_price_volume": 93138,
+    "avg_low_price": 296,
+    "low_price_volume": 125520,
+    "timestamp": 1746796800,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 305,
+    "high_price_volume": 90415,
+    "avg_low_price": 297,
+    "low_price_volume": 116152,
+    "timestamp": 1746797100,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 301,
+    "high_price_volume": 327993,
+    "avg_low_price": 298,
+    "low_price_volume": 76247,
+    "timestamp": 1746797400,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 302,
+    "high_price_volume": 177477,
+    "avg_low_price": 297,
+    "low_price_volume": 30671,
+    "timestamp": 1746797700,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 304,
+    "high_price_volume": 280139,
+    "avg_low_price": 296,
+    "low_price_volume": 432386,
+    "timestamp": 1746798000,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 301,
+    "high_price_volume": 215142,
+    "avg_low_price": 297,
+    "low_price_volume": 75659,
+    "timestamp": 1746798300,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 303,
+    "high_price_volume": 371407,
+    "avg_low_price": 298,
+    "low_price_volume": 77525,
+    "timestamp": 1746798600,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 305,
+    "high_price_volume": 149456,
+    "avg_low_price": 298,
+    "low_price_volume": 138688,
+    "timestamp": 1746798900,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 304,
+    "high_price_volume": 163440,
+    "avg_low_price": 298,
+    "low_price_volume": 81946,
+    "timestamp": 1746799200,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 305,
+    "high_price_volume": 156811,
+    "avg_low_price": 300,
+    "low_price_volume": 97183,
+    "timestamp": 1746799500,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 305,
+    "high_price_volume": 177982,
+    "avg_low_price": 298,
+    "low_price_volume": 123039,
+    "timestamp": 1746799800,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 305,
+    "high_price_volume": 118622,
+    "avg_low_price": 299,
+    "low_price_volume": 88451,
+    "timestamp": 1746800100,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 305,
+    "high_price_volume": 71518,
+    "avg_low_price": 301,
+    "low_price_volume": 24673,
+    "timestamp": 1746800400,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 304,
+    "high_price_volume": 171751,
+    "avg_low_price": 299,
+    "low_price_volume": 116321,
+    "timestamp": 1746800700,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 305,
+    "high_price_volume": 68179,
+    "avg_low_price": 300,
+    "low_price_volume": 43509,
+    "timestamp": 1746801000,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 300,
+    "high_price_volume": 244221,
+    "avg_low_price": 299,
+    "low_price_volume": 71411,
+    "timestamp": 1746801300,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 300,
+    "high_price_volume": 356785,
+    "avg_low_price": 299,
+    "low_price_volume": 69578,
+    "timestamp": 1746801600,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 300,
+    "high_price_volume": 337052,
+    "avg_low_price": 297,
+    "low_price_volume": 198686,
+    "timestamp": 1746801900,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 301,
+    "high_price_volume": 247156,
+    "avg_low_price": 296,
+    "low_price_volume": 65477,
+    "timestamp": 1746802200,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 304,
+    "high_price_volume": 137206,
+    "avg_low_price": 297,
+    "low_price_volume": 137924,
+    "timestamp": 1746802500,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 304,
+    "high_price_volume": 42116,
+    "avg_low_price": 298,
+    "low_price_volume": 43872,
+    "timestamp": 1746802800,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 302,
+    "high_price_volume": 76276,
+    "avg_low_price": 296,
+    "low_price_volume": 270036,
+    "timestamp": 1746803100,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 303,
+    "high_price_volume": 65442,
+    "avg_low_price": 297,
+    "low_price_volume": 172566,
+    "timestamp": 1746803400,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 303,
+    "high_price_volume": 76131,
+    "avg_low_price": 295,
+    "low_price_volume": 115282,
+    "timestamp": 1746803700,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 304,
+    "high_price_volume": 100343,
+    "avg_low_price": 298,
+    "low_price_volume": 55749,
+    "timestamp": 1746804000,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 304,
+    "high_price_volume": 90241,
+    "avg_low_price": 297,
+    "low_price_volume": 138585,
+    "timestamp": 1746804300,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 304,
+    "high_price_volume": 169253,
+    "avg_low_price": 296,
+    "low_price_volume": 113763,
+    "timestamp": 1746804600,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 305,
+    "high_price_volume": 129499,
+    "avg_low_price": 300,
+    "low_price_volume": 41068,
+    "timestamp": 1746804900,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 304,
+    "high_price_volume": 64172,
+    "avg_low_price": 300,
+    "low_price_volume": 134196,
+    "timestamp": 1746805200,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 305,
+    "high_price_volume": 110313,
+    "avg_low_price": 300,
+    "low_price_volume": 58938,
+    "timestamp": 1746805500,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 306,
+    "high_price_volume": 156038,
+    "avg_low_price": 299,
+    "low_price_volume": 99182,
+    "timestamp": 1746805800,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 303,
+    "high_price_volume": 181302,
+    "avg_low_price": 299,
+    "low_price_volume": 116970,
+    "timestamp": 1746806100,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 303,
+    "high_price_volume": 192580,
+    "avg_low_price": 298,
+    "low_price_volume": 56183,
+    "timestamp": 1746806400,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 302,
+    "high_price_volume": 189513,
+    "avg_low_price": 297,
+    "low_price_volume": 88360,
+    "timestamp": 1746806700,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 304,
+    "high_price_volume": 195291,
+    "avg_low_price": 296,
+    "low_price_volume": 39545,
+    "timestamp": 1746807000,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 305,
+    "high_price_volume": 104091,
+    "avg_low_price": 298,
+    "low_price_volume": 24530,
+    "timestamp": 1746807300,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 303,
+    "high_price_volume": 180074,
+    "avg_low_price": 297,
+    "low_price_volume": 160744,
+    "timestamp": 1746807600,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 304,
+    "high_price_volume": 151416,
+    "avg_low_price": 296,
+    "low_price_volume": 50140,
+    "timestamp": 1746807900,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 303,
+    "high_price_volume": 212468,
+    "avg_low_price": 297,
+    "low_price_volume": 102335,
+    "timestamp": 1746808200,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 303,
+    "high_price_volume": 396181,
+    "avg_low_price": 297,
+    "low_price_volume": 105510,
+    "timestamp": 1746808500,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 300,
+    "high_price_volume": 352645,
+    "avg_low_price": 296,
+    "low_price_volume": 75996,
+    "timestamp": 1746808800,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 302,
+    "high_price_volume": 472967,
+    "avg_low_price": 295,
+    "low_price_volume": 132404,
+    "timestamp": 1746809100,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 300,
+    "high_price_volume": 360604,
+    "avg_low_price": 296,
+    "low_price_volume": 22311,
+    "timestamp": 1746809400,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 302,
+    "high_price_volume": 311850,
+    "avg_low_price": 295,
+    "low_price_volume": 98362,
+    "timestamp": 1746809700,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 304,
+    "high_price_volume": 170321,
+    "avg_low_price": 296,
+    "low_price_volume": 58174,
+    "timestamp": 1746810000,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 304,
+    "high_price_volume": 242505,
+    "avg_low_price": 295,
+    "low_price_volume": 46420,
+    "timestamp": 1746810300,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 301,
+    "high_price_volume": 433776,
+    "avg_low_price": 296,
+    "low_price_volume": 44381,
+    "timestamp": 1746810600,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 300,
+    "high_price_volume": 219274,
+    "avg_low_price": 296,
+    "low_price_volume": 33427,
+    "timestamp": 1746810900,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 299,
+    "high_price_volume": 231911,
+    "avg_low_price": 297,
+    "low_price_volume": 37125,
+    "timestamp": 1746811200,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 299,
+    "high_price_volume": 219771,
+    "avg_low_price": 294,
+    "low_price_volume": 37992,
+    "timestamp": 1746811500,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 299,
+    "high_price_volume": 129793,
+    "avg_low_price": 294,
+    "low_price_volume": 75652,
+    "timestamp": 1746811800,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 300,
+    "high_price_volume": 220867,
+    "avg_low_price": 296,
+    "low_price_volume": 83489,
+    "timestamp": 1746812100,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 301,
+    "high_price_volume": 134038,
+    "avg_low_price": 294,
+    "low_price_volume": 48318,
+    "timestamp": 1746812400,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 304,
+    "high_price_volume": 111876,
+    "avg_low_price": 296,
+    "low_price_volume": 31342,
+    "timestamp": 1746812700,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 306,
+    "high_price_volume": 79410,
+    "avg_low_price": 300,
+    "low_price_volume": 60478,
+    "timestamp": 1746813000,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 306,
+    "high_price_volume": 31683,
+    "avg_low_price": 301,
+    "low_price_volume": 97948,
+    "timestamp": 1746813300,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 304,
+    "high_price_volume": 115049,
+    "avg_low_price": 299,
+    "low_price_volume": 73717,
+    "timestamp": 1746813600,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 304,
+    "high_price_volume": 78993,
+    "avg_low_price": 298,
+    "low_price_volume": 41041,
+    "timestamp": 1746813900,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 304,
+    "high_price_volume": 149306,
+    "avg_low_price": 296,
+    "low_price_volume": 172407,
+    "timestamp": 1746814200,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 300,
+    "high_price_volume": 240424,
+    "avg_low_price": 296,
+    "low_price_volume": 166584,
+    "timestamp": 1746814500,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 299,
+    "high_price_volume": 345567,
+    "avg_low_price": 296,
+    "low_price_volume": 52617,
+    "timestamp": 1746814800,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 301,
+    "high_price_volume": 426798,
+    "avg_low_price": 297,
+    "low_price_volume": 101497,
+    "timestamp": 1746815100,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 299,
+    "high_price_volume": 429248,
+    "avg_low_price": 297,
+    "low_price_volume": 87937,
+    "timestamp": 1746815400,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 299,
+    "high_price_volume": 413450,
+    "avg_low_price": 294,
+    "low_price_volume": 63072,
+    "timestamp": 1746815700,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 300,
+    "high_price_volume": 278287,
+    "avg_low_price": 294,
+    "low_price_volume": 65297,
+    "timestamp": 1746816000,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 304,
+    "high_price_volume": 351274,
+    "avg_low_price": 300,
+    "low_price_volume": 59302,
+    "timestamp": 1746816300,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 304,
+    "high_price_volume": 327194,
+    "avg_low_price": 296,
+    "low_price_volume": 66872,
+    "timestamp": 1746816600,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 304,
+    "high_price_volume": 275674,
+    "avg_low_price": 297,
+    "low_price_volume": 133213,
+    "timestamp": 1746816900,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 304,
+    "high_price_volume": 226009,
+    "avg_low_price": 298,
+    "low_price_volume": 138841,
+    "timestamp": 1746817200,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 301,
+    "high_price_volume": 382862,
+    "avg_low_price": 297,
+    "low_price_volume": 104960,
+    "timestamp": 1746817500,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 305,
+    "high_price_volume": 399024,
+    "avg_low_price": 300,
+    "low_price_volume": 75815,
+    "timestamp": 1746817800,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 304,
+    "high_price_volume": 243169,
+    "avg_low_price": 298,
+    "low_price_volume": 204964,
+    "timestamp": 1746818100,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 303,
+    "high_price_volume": 243466,
+    "avg_low_price": 296,
+    "low_price_volume": 85067,
+    "timestamp": 1746818400,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 304,
+    "high_price_volume": 167430,
+    "avg_low_price": 297,
+    "low_price_volume": 83793,
+    "timestamp": 1746818700,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 303,
+    "high_price_volume": 219776,
+    "avg_low_price": 297,
+    "low_price_volume": 206128,
+    "timestamp": 1746819000,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 303,
+    "high_price_volume": 284777,
+    "avg_low_price": 299,
+    "low_price_volume": 60552,
+    "timestamp": 1746819300,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 303,
+    "high_price_volume": 202519,
+    "avg_low_price": 299,
+    "low_price_volume": 71361,
+    "timestamp": 1746819600,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 303,
+    "high_price_volume": 208327,
+    "avg_low_price": 300,
+    "low_price_volume": 26820,
+    "timestamp": 1746819900,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 304,
+    "high_price_volume": 288687,
+    "avg_low_price": 298,
+    "low_price_volume": 57894,
+    "timestamp": 1746820200,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 303,
+    "high_price_volume": 184198,
+    "avg_low_price": 301,
+    "low_price_volume": 71817,
+    "timestamp": 1746820500,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 304,
+    "high_price_volume": 148450,
+    "avg_low_price": 299,
+    "low_price_volume": 57388,
+    "timestamp": 1746820800,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 303,
+    "high_price_volume": 116516,
+    "avg_low_price": 298,
+    "low_price_volume": 49733,
+    "timestamp": 1746821100,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 303,
+    "high_price_volume": 219567,
+    "avg_low_price": 300,
+    "low_price_volume": 47626,
+    "timestamp": 1746821400,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 303,
+    "high_price_volume": 135163,
+    "avg_low_price": 300,
+    "low_price_volume": 57530,
+    "timestamp": 1746821700,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 304,
+    "high_price_volume": 191890,
+    "avg_low_price": 299,
+    "low_price_volume": 117531,
+    "timestamp": 1746822000,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 304,
+    "high_price_volume": 224526,
+    "avg_low_price": 302,
+    "low_price_volume": 56842,
+    "timestamp": 1746822300,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 303,
+    "high_price_volume": 200195,
+    "avg_low_price": 299,
+    "low_price_volume": 90203,
+    "timestamp": 1746822600,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 303,
+    "high_price_volume": 250626,
+    "avg_low_price": 298,
+    "low_price_volume": 79394,
+    "timestamp": 1746822900,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 304,
+    "high_price_volume": 202425,
+    "avg_low_price": 299,
+    "low_price_volume": 55209,
+    "timestamp": 1746823200,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 305,
+    "high_price_volume": 56376,
+    "avg_low_price": 299,
+    "low_price_volume": 85091,
+    "timestamp": 1746823500,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 303,
+    "high_price_volume": 239616,
+    "avg_low_price": 298,
+    "low_price_volume": 113528,
+    "timestamp": 1746823800,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 304,
+    "high_price_volume": 225303,
+    "avg_low_price": 301,
+    "low_price_volume": 74072,
+    "timestamp": 1746824100,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 303,
+    "high_price_volume": 90873,
+    "avg_low_price": 299,
+    "low_price_volume": 127505,
+    "timestamp": 1746824400,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 304,
+    "high_price_volume": 120656,
+    "avg_low_price": 297,
+    "low_price_volume": 42969,
+    "timestamp": 1746824700,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 304,
+    "high_price_volume": 75446,
+    "avg_low_price": 300,
+    "low_price_volume": 101667,
+    "timestamp": 1746825000,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 301,
+    "high_price_volume": 368793,
+    "avg_low_price": 298,
+    "low_price_volume": 189060,
+    "timestamp": 1746825300,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 304,
+    "high_price_volume": 106768,
+    "avg_low_price": 298,
+    "low_price_volume": 97953,
+    "timestamp": 1746825600,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 303,
+    "high_price_volume": 238642,
+    "avg_low_price": 300,
+    "low_price_volume": 18041,
+    "timestamp": 1746825900,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 303,
+    "high_price_volume": 245419,
+    "avg_low_price": 301,
+    "low_price_volume": 45925,
+    "timestamp": 1746826200,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 303,
+    "high_price_volume": 184873,
+    "avg_low_price": 300,
+    "low_price_volume": 53102,
+    "timestamp": 1746826500,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 303,
+    "high_price_volume": 253130,
+    "avg_low_price": 300,
+    "low_price_volume": 21834,
+    "timestamp": 1746826800,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 304,
+    "high_price_volume": 133927,
+    "avg_low_price": 298,
+    "low_price_volume": 44985,
+    "timestamp": 1746827100,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 303,
+    "high_price_volume": 292837,
+    "avg_low_price": 300,
+    "low_price_volume": 57467,
+    "timestamp": 1746827400,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 304,
+    "high_price_volume": 158619,
+    "avg_low_price": 301,
+    "low_price_volume": 94167,
+    "timestamp": 1746827700,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 303,
+    "high_price_volume": 206559,
+    "avg_low_price": 298,
+    "low_price_volume": 72995,
+    "timestamp": 1746828000,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 302,
+    "high_price_volume": 219183,
+    "avg_low_price": 298,
+    "low_price_volume": 98326,
+    "timestamp": 1746828300,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 302,
+    "high_price_volume": 159927,
+    "avg_low_price": 298,
+    "low_price_volume": 31094,
+    "timestamp": 1746828600,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 302,
+    "high_price_volume": 138245,
+    "avg_low_price": 298,
+    "low_price_volume": 41424,
+    "timestamp": 1746828900,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 302,
+    "high_price_volume": 121559,
+    "avg_low_price": 299,
+    "low_price_volume": 87260,
+    "timestamp": 1746829200,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 303,
+    "high_price_volume": 372018,
+    "avg_low_price": 298,
+    "low_price_volume": 34897,
+    "timestamp": 1746829500,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 302,
+    "high_price_volume": 64305,
+    "avg_low_price": 299,
+    "low_price_volume": 26569,
+    "timestamp": 1746829800,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 302,
+    "high_price_volume": 23434,
+    "avg_low_price": 300,
+    "low_price_volume": 82211,
+    "timestamp": 1746830100,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  },
+  {
+    "item_id": 565,
+    "avg_high_price": 303,
+    "high_price_volume": 207566,
+    "avg_low_price": 295,
+    "low_price_volume": 716668,
+    "timestamp": 1746830400,
+    "fetch_time": "2025-05-09T18:47:45.018383"
+  }
+]

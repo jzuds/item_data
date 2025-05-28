@@ -1,0 +1,38 @@
+services:
+  postgres:
+    image: postgres:latest
+    container_name: item_data_postgres
+    environment:
+      POSTGRES_USER: item_data_user
+      POSTGRES_PASSWORD: secure_password_123
+      POSTGRES_DB: item_data_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./data:/var/lib/postgresql/data
+      - ./init-db.sql:/docker-entrypoint-initdb.d/init.sql
+    restart: unless-stopped
+    networks:
+      - item_data_network
+
+  dash_app:
+    build: ./dash_app
+    container_name: item_dashboard
+    ports:
+      - "8050:8050"
+    volumes:
+      - ./dash_app:/dash_app
+    depends_on:
+      - postgres
+    environment:
+      DB_HOST: postgres
+      DB_NAME: item_data_db
+      DB_USER: item_data_user
+      DB_PASSWORD: secure_password_123
+    restart: unless-stopped
+    networks:
+      - item_data_network
+
+networks:
+  item_data_network:
+    driver: bridge
