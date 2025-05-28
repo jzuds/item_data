@@ -10,8 +10,8 @@ RUN apt-get update && apt-get install -y \
 
 COPY requirements.txt .
 COPY item_data_collector.py .
-COPY queue_processor.py .
 
 RUN pip install --no-cache-dir -r requirements.txt
 
-CMD ["python", "item_data_collector.py"]
+ENTRYPOINT ["python", "-u", "item_data_collector.py"]
+CMD []
