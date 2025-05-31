@@ -1,1 +1,6 @@
+#project folders
 data/
+airflow/logs/
+
+#python artifacts
+__pycache__/

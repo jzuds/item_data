@@ -45,49 +45,107 @@ services:
     networks:
       - item_data_network
 
-  data_collection_blood_runes:
-    build: ./data_collector
-    env_file:
-      - .env
-    command: ["--item", "565"]
-    depends_on: *common-depends
-    environment: *common-environment
+  # data_collection_blood_runes:
+  #   build: ./data_collector
+  #   env_file:
+  #     - .env
+  #   command: ["--item", "565"]
+  #   depends_on: *common-depends
+  #   environment: *common-environment
+  #   restart: unless-stopped
+  #   networks:
+  #     - item_data_network
+
+  # data_collection_bird_nests:
+  #   build: ./data_collector
+  #   env_file:
+  #     - .env
+  #   command: ["--item", "5075"]
+  #   depends_on: *common-depends
+  #   environment: *common-environment
+  #   restart: unless-stopped
+  #   networks:
+  #     - item_data_network
+
+  # data_collection_oak_planks:
+  #   build: ./data_collector
+  #   env_file:
+  #     - .env
+  #   command: ["--item", "8778"]
+  #   depends_on: *common-depends
+  #   environment: *common-environment
+  #   restart: unless-stopped
+  #   networks:
+  #     - item_data_network
+
+  # data_collection_dragon_bones:
+  #   build: ./data_collector
+  #   env_file:
+  #     - .env
+  #   command: ["--item", "536"]
+  #   depends_on: *common-depends
+  #   environment: *common-environment
+  #   restart: unless-stopped
+  #   networks:
+  #     - item_data_network
+
+  airflow-webserver:
+    image: apache/airflow:2.8.1
+    container_name: airflow-webserver
+    depends_on:
+      - airflow-postgres
+    environment:
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__CORE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@airflow-postgres:5432/airflow
+      AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
+      AIRFLOW__WEBSERVER__EXPOSE_CONFIG: 'true'
+    volumes:
+      - ./airflow/dags:/opt/airflow/dags
+      - ./airflow/logs:/opt/airflow/logs
+      - ./airflow/plugins:/opt/airflow/plugins
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./airflow/scripts/entrypoint.sh:/entrypoint.sh
+    entrypoint: ["/entrypoint.sh"]
+    ports:
+      - "8080:8080"
     restart: unless-stopped
     networks:
       - item_data_network
 
-  data_collection_bird_nests:
-    build: ./data_collector
-    env_file:
-      - .env
-    command: ["--item", "5075"]
-    depends_on: *common-depends
-    environment: *common-environment
+
+  airflow-scheduler:
+    image: apache/airflow:2.8.1
+    container_name: airflow-scheduler
+    depends_on:
+      - airflow-webserver
+    environment:
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__CORE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@airflow-postgres:5432/airflow
+    volumes:
+      - ./airflow/dags:/opt/airflow/dags
+      - ./airflow/logs:/opt/airflow/logs
+      - ./airflow/plugins:/opt/airflow/plugins
+      - /var/run/docker.sock:/var/run/docker.sock
+    command: scheduler
     restart: unless-stopped
     networks:
       - item_data_network
 
-  data_collection_oak_planks:
-    build: ./data_collector
-    env_file:
-      - .env
-    command: ["--item", "8778"]
-    depends_on: *common-depends
-    environment: *common-environment
+  airflow-postgres:
+    image: postgres:15
+    container_name: airflow-postgres
+    environment:
+      POSTGRES_USER: airflow
+      POSTGRES_PASSWORD: airflow
+      POSTGRES_DB: airflow
+    volumes:
+      - airflow_postgres_data:/var/lib/postgresql/data
     restart: unless-stopped
     networks:
       - item_data_network
 
-  data_collection_dragon_bones:
-    build: ./data_collector
-    env_file:
-      - .env
-    command: ["--item", "536"]
-    depends_on: *common-depends
-    environment: *common-environment
-    restart: unless-stopped
-    networks:
-      - item_data_network
+volumes:
+  airflow_postgres_data:
 
 networks:
   item_data_network:

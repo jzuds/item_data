@@ -21,20 +21,22 @@ CONFIG = {
         {'label': 'Last 12 hours', 'value': 'Last 12 hours'},
         {'label': 'Last day', 'value': 'Last day'},
         {'label': 'Last 7 days', 'value': 'Last 7 days'},
+        {'label': 'Last 30 days', 'value': 'Last 30 days'},
     ],
     'TICK_INTERVALS': {
-        'Last 6 hours': 6,
-        'Last 12 hours': 12,
-        'Last day': 48,
-        'Last 7 days': 96
+        'Last 6 hours': 6, #30 minute ticks
+        'Last 12 hours': 12, #60 minute ticks
+        'Last day': 12 * 4, #4 hour ticks
+        'Last 7 days': 12 * 8, #8 hour ticks
+        'Last 30 days': 12 * 24, #24 hour ticks
     },
-    'CACHE_TTL': 30,
+    'CACHE_TTL': 600,
 }
 
 # PostgreSQL connection setup
 def get_data(selected_time_range=None):
     conn = psycopg2.connect(
-        host=os.getenv("DB_HOST", "localhost"),
+        host=os.getenv("DB_HOST", "postgres"),
         database=os.getenv("DB_NAME", "item_data_db"),
         user=os.getenv("DB_USER", "item_data_user"),
         password=os.getenv("DB_PASSWORD", "secure_password_123")
@@ -51,6 +53,7 @@ def get_data(selected_time_range=None):
             low_price_volume,
             total_volume,
             total_volume_accum_1h,
+            total_market_spend_accum_1d,    
             total_market_spend,
             total_market_spend_accum_1h,
             total_market_margin,
@@ -80,6 +83,8 @@ def get_data(selected_time_range=None):
             start_time = now - datetime.timedelta(days=1)
         elif selected_time_range == 'Last 7 days':
             start_time = now - datetime.timedelta(days=7)
+        elif selected_time_range == 'Last 30 days':
+            start_time = now - datetime.timedelta(days=30)
 
         time_rounded_down_bottom_of_hour = start_time.replace(minute=0, second=0, microsecond=0)
         query += f" WHERE event_timestamp_utc >= '{time_rounded_down_bottom_of_hour}'"
@@ -159,9 +164,9 @@ def update_graph(n, selected_time_range, selected_item_id):
     total_spend_trace = [
         go.Scatter(
             x=timestamps,
-            y=df_filtered['total_market_spend'],
+            y=df_filtered['total_market_spend_accum_1d'],
             mode='lines+markers',
-            name='Market Spend',
+            name='1d Market Spend',
             line=dict(color='orange', width=1)
         ),
         go.Scatter(
