@@ -20,7 +20,7 @@ with DAG(
 ) as dag:
 
     run_collector = DockerOperator(
-        task_id='collect_oak_planks',
+        task_id='collect_blood_runes',
         image='data_collector:latest',
         api_version='auto',
         auto_remove=True,
