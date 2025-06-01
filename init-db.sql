@@ -8,9 +8,10 @@ CREATE USER readonly_user WITH PASSWORD 'password';
 ------------------------------------------------
 ------------------------------------------------
 CREATE ROLE etl_role;
-CREATE ROLE analytics_ro_role;
+CREATE ROLE analytics_ro_user;
+
 GRANT etl_role TO etl_user;
-GRANT analytics_ro_role TO analytics_ro_role;
+GRANT analytics_ro_role TO analytics_ro_user;
 
 -- SCHEMA
 ------------------------------------------------
