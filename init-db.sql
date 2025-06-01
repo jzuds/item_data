@@ -2,13 +2,13 @@
 ------------------------------------------------
 ------------------------------------------------
 CREATE USER etl_user WITH PASSWORD 'password';
-CREATE USER readonly_user WITH PASSWORD 'password';
+CREATE USER analytics_ro_user WITH PASSWORD 'password';
 
 -- ROLE
 ------------------------------------------------
 ------------------------------------------------
 CREATE ROLE etl_role;
-CREATE ROLE analytics_ro_user;
+CREATE ROLE analytics_ro_role;
 
 GRANT etl_role TO etl_user;
 GRANT analytics_ro_role TO analytics_ro_user;
