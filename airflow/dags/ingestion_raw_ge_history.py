@@ -6,8 +6,8 @@ import logging
 
 default_args = {
     'owner': 'airflow',
-    'retries': 0,
-    'retry_delay': timedelta(minutes=5),
+    'retries': 1,
+    'retry_delay': timedelta(minutes=10),
 }
 
 with DAG(
@@ -15,7 +15,7 @@ with DAG(
     default_args=default_args,
     description='collects 5m timeseries data for all items',
     schedule_interval='*/5 * * * *',  # every 5 minutes
-    start_date=datetime(2025, 5, 31),
+    start_date=datetime(2025, 5, 1),
     catchup=True,
     tags=['timeseries', '5m'],
 ) as dag:
@@ -28,11 +28,5 @@ with DAG(
         command='{{ logical_date.timestamp() | int }}',
         docker_url='unix://var/run/docker.sock',
         network_mode='item_data_item_data_network',
-        environment={
-            'DB_HOST': os.getenv("DB_HOST", "postgres"),
-            'DB_NAME': os.getenv("DB_NAME", "item_data_db"),
-            'DB_USER': os.getenv("DB_USER", "item_data_user"),
-            'DB_PASSWORD': os.getenv("DB_PASSWORD", "secure_password_123"),
-        },
         mount_tmp_dir=False,
     )
