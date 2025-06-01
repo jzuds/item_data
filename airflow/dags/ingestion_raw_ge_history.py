@@ -2,29 +2,30 @@ import os
 from airflow import DAG
 from airflow.providers.docker.operators.docker import DockerOperator
 from datetime import datetime, timedelta
+import logging
 
 default_args = {
     'owner': 'airflow',
-    'retries': 1,
+    'retries': 0,
     'retry_delay': timedelta(minutes=5),
 }
 
 with DAG(
-    dag_id='5m_timeseries_blood_runes_collector',
+    dag_id='ingestion_raw_ge_history',
     default_args=default_args,
-    description='Run blood runes data collector',
+    description='collects 5m timeseries data for all items',
     schedule_interval='*/5 * * * *',  # every 5 minutes
     start_date=datetime(2025, 5, 31),
-    catchup=False,
+    catchup=True,
     tags=['timeseries', '5m'],
 ) as dag:
 
     run_collector = DockerOperator(
-        task_id='collect_blood_runes',
-        image='data_collector:latest',
+        task_id='ingestion_raw_ge_history',
+        image='fetch-ge-wiki-prices:latest',
         api_version='auto',
         auto_remove=True,
-        command='--item 565',
+        command='{{ logical_date.timestamp() | int }}',
         docker_url='unix://var/run/docker.sock',
         network_mode='item_data_item_data_network',
         environment={

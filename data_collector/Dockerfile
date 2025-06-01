@@ -15,12 +15,11 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && rm -rf /var/lib/apt/lists/* \
     && pip install --no-cache-dir -r requirements.txt
 
-COPY item_data_collector.py .
-COPY item_data_collector_v2.py .
+COPY fetch_ge_wiki_prices.py .
 COPY .env .
 
 
 RUN pip install --no-cache-dir -r requirements.txt
 
-ENTRYPOINT ["python", "-u", "item_data_collector_v2.py"]
+ENTRYPOINT ["python", "-u", "fetch_ge_wiki_prices.py"]
 CMD []
