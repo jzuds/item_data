@@ -1,28 +1,30 @@
-/*
-CREATING USERS, ROLES, SCHEMAS
-*/
+-- USERS
+------------------------------------------------
+------------------------------------------------
+CREATE USER etl_user WITH PASSWORD 'password';
+CREATE USER readonly_user WITH PASSWORD 'password';
 
--- Create schemas (if not already created)
+-- ROLE
+------------------------------------------------
+------------------------------------------------
+CREATE ROLE etl_role;
+CREATE ROLE analytics_ro_role;
+GRANT etl_role TO etl_user;
+GRANT analytics_ro_role TO analytics_ro_role;
+
+-- SCHEMA
+------------------------------------------------
+------------------------------------------------
 CREATE schema if not EXISTS raw;
 CREATE SCHEMA if not exists transform;
 
--- Create role
-CREATE ROLE etl_role;
-CREATE ROLE analytics_ro_role;
-
--- Grant usage on schemas
 GRANT USAGE ON SCHEMA raw TO etl_role;
 GRANT USAGE ON SCHEMA transform TO etl_role;
 GRANT USAGE ON SCHEMA transform TO analytics_ro_role;
-
-
--- Grant read/write access on all current tables
 GRANT SELECT, INSERT, UPDATE, DELETE ON ALL TABLES IN SCHEMA raw TO etl_role;
 GRANT SELECT, INSERT, UPDATE, DELETE ON ALL TABLES IN SCHEMA transform TO etl_role;
 GRANT SELECT ON ALL TABLES IN SCHEMA transform TO analytics_ro_role;
 
-
--- Grant permissions on future tables
 ALTER DEFAULT PRIVILEGES IN SCHEMA "raw"
   GRANT SELECT, INSERT, UPDATE, DELETE ON TABLES TO etl_role;
 
@@ -33,15 +35,9 @@ ALTER DEFAULT PRIVILEGES IN SCHEMA transform
   GRANT SELECT ON TABLES TO analytics_ro_role;
 
 
--- Create users
-CREATE USER etl_user WITH PASSWORD 'password';
-CREATE USER readonly_user WITH PASSWORD 'password';
-
--- Assign users to roles
-GRANT etl_role TO etl_user;
-GRANT analytics_ro_role TO analytics_ro_role;
-
--- Create table for item data
+-- TABLES
+------------------------------------------------
+------------------------------------------------
 CREATE TABLE IF NOT EXISTS "raw"."raw_ge_history" (
     item_id INTEGER NOT NULL,
     avg_high_price INTEGER,
@@ -53,6 +49,12 @@ CREATE TABLE IF NOT EXISTS "raw"."raw_ge_history" (
     CONSTRAINT unique_item_event UNIQUE (item_id, event_unixtime)
 );
 
--- Add indexes for faster queries
+-- VIEWS
+------------------------------------------------
+------------------------------------------------
+
+-- INDEXES
+------------------------------------------------
+------------------------------------------------
 CREATE INDEX IF NOT EXISTS idx_raw_ge_history_item_id ON "raw"."raw_ge_history" (item_id);
 CREATE INDEX IF NOT EXISTS idx_raw_ge_history_event_unixtime ON "raw"."raw_ge_history" (event_unixtime);

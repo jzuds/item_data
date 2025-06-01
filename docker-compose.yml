@@ -34,13 +34,12 @@ services:
   dash_app:
     build: ./dash_app
     env_file:
-      - .env
+      - ./dash_app/.env
     ports:
       - "8050:8050"
     volumes:
       - ./dash_app:/dash_app
     depends_on: *common-depends
-    environment: *common-environment
     restart: unless-stopped
     networks:
       - item_data_network
