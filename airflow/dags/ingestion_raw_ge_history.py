@@ -16,7 +16,7 @@ with DAG(
     description='collects 5m timeseries data for all items',
     schedule_interval='*/5 * * * *',  # every 5 minutes
     start_date=datetime(2025, 5, 1),
-    catchup=True,
+    catchup=False,
     tags=['timeseries', '5m'],
 ) as dag:
 

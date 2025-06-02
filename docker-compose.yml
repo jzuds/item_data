@@ -1,15 +1,9 @@
-x-common-environment: &common-environment
-  DB_HOST: ${DB_HOST}
-  DB_NAME: ${DB_NAME}
-  DB_USER: ${DB_USER}
-  DB_PASSWORD: ${DB_PASSWORD}
-
 x-common-depends: &common-depends
   postgres:
     condition: service_healthy
 
 x-healthcheck-postgres: &healthcheck-postgres
-  test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER}"]
+  test: ["CMD-SHELL", "pg_isready -U item_data_user"]
   interval: 10s
   timeout: 5s
   retries: 5
@@ -18,9 +12,9 @@ services:
   postgres:
     image: postgres:latest
     environment:
-      POSTGRES_USER: ${POSTGRES_USER}
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
-      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: item_data_user
+      POSTGRES_PASSWORD: secure_password_123
+      POSTGRES_DB: item_data_db
     ports:
       - "5432:5432"
     healthcheck: *healthcheck-postgres
@@ -31,14 +25,14 @@ services:
     networks:
       - item_data_network
 
-  dash_app:
-    build: ./dash_app
+  dashboard:
+    build: ./dashboard
     env_file:
-      - ./dash_app/.env
+      - ./dashboard/.env
     ports:
       - "8050:8050"
     volumes:
-      - ./dash_app:/dash_app
+      - ./dashboard:/dashboard
     depends_on: *common-depends
     restart: unless-stopped
     networks:

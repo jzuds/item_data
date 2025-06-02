@@ -2,7 +2,7 @@
 FROM python:3.11-slim
 
 # Set working directory
-WORKDIR /dash_app
+WORKDIR /dashboard
 
 # Install system dependencies for psycopg2
 RUN apt-get update && apt-get install -y \
@@ -17,8 +17,8 @@ COPY app.py .
 # Install Python dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Expose port for Dash app
+# Expose port app
 EXPOSE 8050
 
 # Run the app
-CMD ["python", "app.py"]
+CMD ["streamlit","run","app.py", "--server.port", "8050"]

@@ -8,7 +8,7 @@ project for collecting item data from the OSRS Grand Exchange
 ~item_data/data_collector# docker build -t fetch-ge-wiki-prices .
 ~item_data# docker-compose up -d --build 
 
-## Web Interface
+## Interfaces
 - [📅 Airflow](http://localhost:8080/home)
 - [📈 Dashboard](http://localhost:8050)
 

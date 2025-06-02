@@ -1,5 +1,4 @@
-dash
 dotenv
-pandas
 psycopg2-binary
-plotly
+streamlit
+sqlalchemy

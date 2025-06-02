@@ -20,10 +20,12 @@ CREATE schema if not EXISTS raw;
 CREATE SCHEMA if not exists transform;
 
 GRANT USAGE ON SCHEMA raw TO etl_role;
+GRANT USAGE ON SCHEMA raw TO analytics_ro_role;
 GRANT USAGE ON SCHEMA transform TO etl_role;
 GRANT USAGE ON SCHEMA transform TO analytics_ro_role;
 GRANT SELECT, INSERT, UPDATE, DELETE ON ALL TABLES IN SCHEMA raw TO etl_role;
 GRANT SELECT, INSERT, UPDATE, DELETE ON ALL TABLES IN SCHEMA transform TO etl_role;
+GRANT SELECT ON ALL TABLES IN SCHEMA raw TO analytics_ro_role;
 GRANT SELECT ON ALL TABLES IN SCHEMA transform TO analytics_ro_role;
 
 ALTER DEFAULT PRIVILEGES IN SCHEMA "raw"
