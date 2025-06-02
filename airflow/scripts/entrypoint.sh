@@ -1,4 +1,5 @@
 #!/bin/bash
+set -x
 
 # Wait for DB to be ready
 echo "Waiting for airflow-postgres..."
@@ -7,8 +8,24 @@ while ! nc -z airflow-postgres 5432; do
 done
 echo "Postgres is up!"
 
-# Initialize DB
-airflow db init
+CHECK_FILE="/opt/airflow/airflow_db_initialized.flag"
+
+if [ ! -f "$CHECK_FILE" ]; then
+  echo "Airflow DB not initialized. Initializing now..."
+  
+  airflow db migrate
+  airflow connections create-default-connections
+  
+  if [ $? -eq 0 ]; then
+    touch "$CHECK_FILE"
+    echo "Initialization complete. Created check file."
+  else
+    echo "Airflow DB initialization failed."
+    exit 1
+  fi
+else
+  echo "Airflow DB already initialized (check file exists)."
+fi
 
 # Create admin user if it doesn't exist
 airflow users list | grep -q admin
@@ -25,5 +42,6 @@ else
   echo "Admin user already exists"
 fi
 
-# Start the webserver
+echo "Starting Airflow webserver..."
 exec airflow webserver
+

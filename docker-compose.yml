@@ -52,8 +52,10 @@ services:
       - ./airflow/logs:/opt/airflow/logs
       - ./airflow/plugins:/opt/airflow/plugins
       - /var/run/docker.sock:/var/run/docker.sock
-      - ./airflow/scripts/entrypoint.sh:/entrypoint.sh
-    entrypoint: ["/entrypoint.sh"]
+      - ./airflow/scripts:/opt/airflow/scripts
+    group_add:
+    - 1001
+    entrypoint: ["/opt/airflow/scripts/entrypoint.sh"]
     ports:
       - "8080:8080"
     restart: unless-stopped
@@ -72,6 +74,8 @@ services:
       - ./airflow/logs:/opt/airflow/logs
       - ./airflow/plugins:/opt/airflow/plugins
       - /var/run/docker.sock:/var/run/docker.sock
+    group_add:
+    - 1001
     command: scheduler
     restart: unless-stopped
     networks:
