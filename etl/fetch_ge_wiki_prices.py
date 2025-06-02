@@ -13,16 +13,34 @@ from sqlalchemy.orm import sessionmaker
 # Load .env file
 load_dotenv(find_dotenv())
 
-def fetch_api_data(api_unixtime):
+def fetch_api_data(api_unixtime: int):
     headers = {"User-Agent": os.getenv("USER_AGENT", "ItemDataCollector/1.0")}
     url = f"https://prices.runescape.wiki/api/v1/osrs/5m?timestamp={api_unixtime}"
-    response = requests.get(url, headers=headers)
-    
-    if response.status_code == 200:
+
+    try:
+        response = requests.get(url, headers=headers)
+        response.raise_for_status()
+
         json_data = response.json()
-        return json_data.get("data", {}), json_data.get("timestamp")
-    else:
-        raise Exception(f"API request failed with status code {response.status_code}, message={response.content}")
+        data = json_data.get("data", {})
+        timestamp = json_data.get("timestamp")
+
+        if not data:
+            raise ValueError("API response contains no data (empty dataset).")
+
+        if timestamp is None:
+            raise ValueError("API response missing 'timestamp' field.")
+
+        print(f"timestamp={timestamp} count={len(data)}")
+        return data, timestamp
+
+    except requests.RequestException as e:
+        print(f"Request failed: {e}")
+        raise
+    except ValueError as e:
+        print(f"Data parsing error: {e}")
+        raise
+
 
 
 
