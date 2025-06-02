@@ -1,5 +1,5 @@
 #project folders
-airflow/logs/
+
 
 #python artifacts
 __pycache__/
