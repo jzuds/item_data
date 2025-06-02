@@ -4,7 +4,7 @@ project for collecting item data from the OSRS Grand Exchange
 ## Required
 - [🐳 Docker](https://www.docker.com/) for project containerization
 
-## Setup / Installation Instructions
+## Usage
 ~etl/data_collector# docker build -t fetch-ge-wiki-prices .
 ~item_data# docker-compose up -d --build 
 
@@ -13,6 +13,10 @@ project for collecting item data from the OSRS Grand Exchange
 - [📈 Dashboard](http://localhost:8050)
 
 ## Backfilling
+- 5 minute interval = 1 request
+- 1 hour = 12 requests
+- 1 day = 288 requests
+
 ```
 airflow-scheduler# airflow dags backfill ingestion_raw_ge_history -s 2025-05-01T00:00:00 -e 2025-05-02T00:00:00
 ```
