@@ -1,15 +1,15 @@
 x-common-depends: &common-depends
-  postgres:
+  osrs-database:
     condition: service_healthy
 
 x-healthcheck-postgres: &healthcheck-postgres
-  test: ["CMD-SHELL", "pg_isready -U item_data_user"]
+  test: ["CMD-SHELL", "pg_isready -U item_data_user -d item_data_db"]
   interval: 10s
   timeout: 5s
   retries: 5
 
 services:
-  postgres:
+  osrs-database:
     image: postgres:latest
     environment:
       POSTGRES_USER: item_data_user
@@ -19,7 +19,7 @@ services:
       - "5432:5432"
     healthcheck: *healthcheck-postgres
     volumes:
-      - ./data:/var/lib/postgresql/data
+      - osrs-database-data:/var/lib/postgresql/data
       - ./init-db.sql:/docker-entrypoint-initdb.d/init.sql
     restart: unless-stopped
     networks:
@@ -40,7 +40,6 @@ services:
   
   airflow-webserver:
     image: apache/airflow:2.8.1
-    container_name: airflow-webserver
     depends_on:
       - airflow-postgres
     environment:
@@ -63,7 +62,6 @@ services:
 
   airflow-scheduler:
     image: apache/airflow:2.8.1
-    container_name: airflow-scheduler
     depends_on:
       - airflow-webserver
     environment:
@@ -81,20 +79,21 @@ services:
 
   airflow-postgres:
     image: postgres:15
-    container_name: airflow-postgres
     environment:
       POSTGRES_USER: airflow
       POSTGRES_PASSWORD: airflow
       POSTGRES_DB: airflow
     volumes:
-      - airflow_postgres_data:/var/lib/postgresql/data
+      - airflow-database-data:/var/lib/postgresql/data
     restart: unless-stopped
     networks:
       - item_data_network
 
 volumes:
-  airflow_postgres_data:
+  osrs-database-data:
+  airflow-database-data:
 
 networks:
   item_data_network:
+    name: item_data_network
     driver: bridge

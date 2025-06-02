@@ -27,6 +27,6 @@ with DAG(
         auto_remove=True,
         command='{{ logical_date.timestamp() | int }}',
         docker_url='unix://var/run/docker.sock',
-        network_mode='item_data_item_data_network',
+        network_mode='item_data_network',
         mount_tmp_dir=False,
     )

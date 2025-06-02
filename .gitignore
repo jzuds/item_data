@@ -1,5 +1,4 @@
 #project folders
-data/
 airflow/logs/
 
 #python artifacts
