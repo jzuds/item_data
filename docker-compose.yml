@@ -20,7 +20,7 @@ services:
     healthcheck: *healthcheck-postgres
     volumes:
       - osrs-database-data:/var/lib/postgresql/data
-      - ./init-db.sql:/docker-entrypoint-initdb.d/init.sql
+      - ./item_db/init-db.sql:/docker-entrypoint-initdb.d/init.sql
     restart: unless-stopped
     networks:
       - item_data_network
