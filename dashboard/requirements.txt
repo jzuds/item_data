@@ -2,3 +2,4 @@ dotenv
 psycopg2-binary
 streamlit
 sqlalchemy
+altair
