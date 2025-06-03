@@ -17,8 +17,14 @@ project for collecting item data from the OSRS Grand Exchange
 - 1 hour = 12 requests
 - 1 day = 288 requests
 
+run on airflow-scheduler to fetch a range of 5 minute intervals
 ```
-airflow-scheduler# airflow dags backfill ingestion_raw_ge_history -s 2025-05-01T00:00:00 -e 2025-05-02T00:00:00
+airflow dags backfill ingestion_raw_ge_history -s 2025-06-01T00:00:00 -e 2025-06-02T16:00:00
+```
+
+run on airflow-scheduler to fetch a single 5 minute interval
+```
+airflow dags backfill ingestion_raw_ge_history -s 2025-05-01T23:55:00
 ```
 
 ## Debugging
