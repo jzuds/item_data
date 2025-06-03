@@ -1,37 +1,76 @@
-# OSRS Item Data
-project for collecting item data from the OSRS Grand Exchange
+# 🧙‍♂️ OSRS Item Data
 
-## Required
-- [🐳 Docker](https://www.docker.com/) for project containerization
+A project for collecting item data from the **Old School RuneScape Grand Exchange** using containerized data pipelines and scheduled workflows.
 
-## Interfaces
-- [📅 Airflow](http://localhost:8080/home) (admin:admin)
-- [📈 Dashboard](http://localhost:8050)
+---
 
-## Helpful Commands
-~etl/data_collector# docker build -t fetch-ge-wiki-prices .
-~item_data# docker-compose up -d --build
+## 🧰 Requirements
 
-## Backfilling
-- 5 minute interval = 1 request
-- 1 hour = 12 requests
+- [🐳 Docker](https://www.docker.com/) — Used for containerizing the project
+
+---
+
+## 📟 Interfaces
+
+- [📅 Airflow UI](http://localhost:8080/home)  
+  *Login: `admin:admin`*
+- [📈 Dashboard (Dash)](http://localhost:8050)
+
+---
+
+## 🛠️ Setup & Useful Commands
+
+**Build and run the data collector:**
+**Initialize the project (currently empty, add setup commands here):**
+```bash
+make init-project
+```
+***Start the full stack:***
+```
+make up
+```
+***Stop the full stack:***
+```
+make down
+```
+
+## 🔁 Backfilling Data
+**Backfill frequency breakdown:**
+- 1 request = 5 minute interval
 - 1 day = 288 requests
+> Regardless of rate limits, we ask you to add delays between your requests to help evenly distribute the server load. Keep in mind this is a free project with very real hosting costs.
 
-run on airflow-scheduler to fetch a range of 5 minute intervals
-```
-airflow dags backfill ingestion_raw_ge_history -s 2025-06-01T00:00:00 -e 2025-06-02T16:00:00
-```
-
-run on airflow-scheduler to fetch a single 5 minute interval
-```
-airflow dags backfill ingestion_raw_ge_history -s 2025-05-01T23:55:00
+Use the provided `Makefile` to backfill the last 12 hours:
+```bash
+make backfill
 ```
 
-## Debugging
-- The permission issue with docker_url='unix://var/run/docker.sock'
+🗓️ Fetch a range of 5-minute intervals:
+```bash
+airflow dags backfill ingestion_raw_ge_history \
+  -s 2025-06-01T00:00:00 \
+  -e 2025-06-02T16:00:00
 ```
-$ getent group docker
-docker:x:1001:zuds
+
+⏱️ Fetch a single 5-minute interval:
+```bash
+airflow dags backfill ingestion_raw_ge_history \
+  -s 2025-04-01T00:00:00
+```
+
+## 🐞 Debugging
+**Fixing Docker socket permission issue:**
+If you see an error like:
+```ini
+docker_url='unix://var/run/docker.sock' permission denied
+```
+```bash
+getent group docker
+# Output example: docker:x:1001:zuds
+```
+
+Then, add the group to your container configuration:
+```yaml
 group_add:
 - 1001
 ```
