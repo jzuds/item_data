@@ -47,14 +47,14 @@ make backfill
 
 🗓️ Fetch a range of 5-minute intervals:
 ```bash
-airflow dags backfill ingestion_raw_ge_history \
+docker-compose exec airflow-scheduler airflow dags backfill ingestion_raw_ge_history \
   -s 2025-06-01T00:00:00 \
   -e 2025-06-02T16:00:00
 ```
 
 ⏱️ Fetch a single 5-minute interval:
 ```bash
-airflow dags backfill ingestion_raw_ge_history \
+ docker-compose exec airflow-scheduler airflow dags backfill ingestion_raw_ge_history \
   -s 2025-04-01T00:00:00
 ```
 
