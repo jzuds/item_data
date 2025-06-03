@@ -54,8 +54,8 @@ docker-compose exec airflow-scheduler airflow dags backfill ingestion_raw_ge_his
 
 ⏱️ Fetch a single 5-minute interval:
 ```bash
- docker-compose exec airflow-scheduler airflow dags backfill ingestion_raw_ge_history \
-  -s 2025-04-01T00:00:00
+docker-compose exec airflow-scheduler airflow dags backfill ingestion_raw_ge_history \
+  -s 2025-06-01T00:00:00
 ```
 
 ## 🐞 Debugging
