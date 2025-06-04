@@ -4,6 +4,7 @@ from datetime import datetime
 import os
 from dotenv import load_dotenv, find_dotenv
 import requests
+import sys
 
 from sqlalchemy import (
     create_engine, Column, Integer, Numeric, TIMESTAMP, MetaData, Table, func
@@ -33,7 +34,7 @@ def fetch_api_data(api_unixtime: int):
 
             if age > timedelta(hours=6):
                 print(f"No data for timestamp {api_unixtime}, and it's older than 6 hour. Skipping gracefully.")
-                sys.exit(0)  # Graceful exit — Airflow will treat this as success
+                sys.exit(0) 
             else:
                 raise ValueError("API response contains no data, but timestamp is recent.")
 
