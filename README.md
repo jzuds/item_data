@@ -45,17 +45,24 @@ Use the provided `Makefile` to backfill the last 12 hours:
 make backfill
 ```
 
+or to backfill an entire day (YYYYMMDD)
+```bash
+make backfill DATE=20250601
+```
+
 🗓️ Fetch a range of 5-minute intervals:
 ```bash
 docker-compose exec airflow-scheduler airflow dags backfill ingestion_raw_ge_history \
-  -s 2025-06-01T00:00:00 \
-  -e 2025-06-02T16:00:00
+  -s 2025-01-15T00:00:00 \
+  -e 2025-01-20T00:00:00 \
+  --reset-dagruns
 ```
 
 ⏱️ Fetch a single 5-minute interval:
 ```bash
 docker-compose exec airflow-scheduler airflow dags backfill ingestion_raw_ge_history \
-  -s 2025-06-01T00:00:00
+  -s 2025-06-01T00:00:00 \
+  --reset-dagruns
 ```
 
 ## 🐞 Debugging
