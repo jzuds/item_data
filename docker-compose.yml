@@ -21,9 +21,12 @@ services:
     volumes:
       - osrs-database-data:/var/lib/postgresql/data
       - ./item_db/init-db.sql:/docker-entrypoint-initdb.d/init.sql
+      - ./item_db/postgresql.conf:/etc/postgresql/postgresql.conf:ro
+    command: ["postgres", "-c", "config_file=/etc/postgresql/postgresql.conf"]
     restart: unless-stopped
     networks:
       - item_data_network
+
 
   dashboard:
     build: ./dashboard
@@ -40,6 +43,7 @@ services:
   
   airflow-webserver:
     image: apache/airflow:2.8.1
+    container_name: airflow-webserver
     depends_on:
       - airflow-postgres
     environment:
@@ -64,6 +68,7 @@ services:
 
   airflow-scheduler:
     image: apache/airflow:2.8.1
+    container_name: airflow-scheduler
     depends_on:
       - airflow-webserver
     environment:
@@ -82,6 +87,7 @@ services:
       - item_data_network
 
   airflow-postgres:
+    container_name: airflow-postgres
     image: postgres:15
     environment:
       POSTGRES_USER: airflow
