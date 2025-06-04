@@ -14,9 +14,9 @@ down:
 	docker-compose -f $(COMPOSE_FILE) down
 
 backfill:
-	@if [ -n "$(DATE)" ]; then \
-		START_DATE=$$(date -u -d "$(DATE)" +%Y-%m-%dT00:00:00); \
-		END_DATE=$$(date -u -d "$$(date -d $$START_DATE +1day)" +%Y-%m-%dT00:00:00); \
+	@if [ -n "$(BACKFILL_DATE)" ]; then \
+		START_DATE=$$(date -u -d "$(BACKFILL_DATE)" +%Y-%m-%dT00:00:00); \
+		END_DATE=$$(date -u -d "$$(BACKFILL_DATE -d $$START_DATE +1day)" +%Y-%m-%dT00:00:00); \
 		echo "Running backfill for full day: $(DATE)"; \
 	else \
 		START_DATE=$$(date -u -d '12 hours ago' +%Y-%m-%dT%H:00:00); \
