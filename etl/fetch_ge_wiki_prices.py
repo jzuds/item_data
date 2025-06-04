@@ -26,7 +26,16 @@ def fetch_api_data(api_unixtime: int):
         timestamp = json_data.get("timestamp")
 
         if not data:
-            raise ValueError("API response contains no data (empty dataset).")
+            # Calculate how old the requested timestamp is
+            request_time = datetime.fromtimestamp(api_unixtime, tz=timezone.utc)
+            now = datetime.now(timezone.utc)
+            age = now - request_time
+
+            if age > timedelta(hours=6):
+                print(f"No data for timestamp {api_unixtime}, and it's older than 6 hour. Skipping gracefully.")
+                sys.exit(0)  # Graceful exit — Airflow will treat this as success
+            else:
+                raise ValueError("API response contains no data, but timestamp is recent.")
 
         if timestamp is None:
             raise ValueError("API response missing 'timestamp' field.")
