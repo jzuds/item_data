@@ -2,7 +2,7 @@ COMPOSE_FILE = docker-compose.yml
 BACKFILL_DAG_NAME ?= ingestion_raw_ge_history
 BACKFILL_DATE ?=
 
-.PHONY: init-project up down backfill
+.PHONY: init-project up down backfill dbup airflow-cleanup
 
 init-project:
 	@
@@ -25,3 +25,10 @@ backfill:
 	fi; \
 	echo "From: $$START_DATE to $$END_DATE"; \
 	docker-compose -f $(COMPOSE_FILE) exec airflow-scheduler airflow dags backfill $(BACKFILL_DAG_NAME) -s $$START_DATE -e $$END_DATE
+
+dbup:
+	docker-compose -f $(COMPOSE_FILE) up osrs-database -d
+
+airflow-cleanup:
+	docker-compose -f $(COMPOSE_FILE) exec airflow-webserver airflow tasks clear "$(BACKFILL_DAG_NAME)" \
+		--yes
