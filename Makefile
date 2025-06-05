@@ -19,9 +19,9 @@ backfill:
 		END_DATE=$$(date -u -d "$$(BACKFILL_DATE -d $$START_DATE +1day)" +%Y-%m-%dT00:00:00); \
 		echo "Running backfill for full day: $(DATE)"; \
 	else \
-		START_DATE=$$(date -u -d '12 hours ago' +%Y-%m-%dT%H:00:00); \
+		START_DATE=$$(date -u -d '3 hours ago' +%Y-%m-%dT%H:00:00); \
 		END_DATE=$$(date -u +%Y-%m-%dT%H:00:00); \
-		echo "Running backfill for the last 12 hours"; \
+		echo "Running backfill for the last 3 hours"; \
 	fi; \
 	echo "From: $$START_DATE to $$END_DATE"; \
 	docker-compose -f $(COMPOSE_FILE) exec airflow-scheduler airflow dags backfill $(BACKFILL_DAG_NAME) -s $$START_DATE -e $$END_DATE
