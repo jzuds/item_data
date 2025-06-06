@@ -1,5 +1,7 @@
 #project folders
 
+#database backups
+item_db/*.dump.*
 
 #python artifacts
 __pycache__/
