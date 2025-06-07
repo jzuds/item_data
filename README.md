@@ -2,6 +2,13 @@
 
 A project for collecting item data from the **Old School RuneScape Grand Exchange** using containerized data pipelines and scheduled workflows.
 
+The goal of this project is to enable **insightful analysis** of item price trends and market behavior on the OSRS Grand Exchange.
+
+## 🎯 Objectives
+
+- **Track historical price changes** for specific high-value or high-volume items.
+- **Detect market anomalies** or unusual price/volume fluctuations.
+
 ---
 
 ## 🧰 Requirements
