@@ -11,6 +11,7 @@ x-healthcheck-postgres: &healthcheck-postgres
 services:
   osrs-database:
     image: postgres:latest
+    container_name: osrs-database
     environment:
       POSTGRES_USER: item_data_user
       POSTGRES_PASSWORD: secure_password_123
@@ -30,6 +31,7 @@ services:
 
   dashboard:
     build: ./dashboard
+    container_name: dashboard
     env_file:
       - ./dashboard/.env
     ports:
