@@ -120,8 +120,18 @@ getent group docker
 # Output example: docker:x:1001:zuds
 ```
 
-Then, add the group to your container configuration:
+Then, update the group in the `docker-compose.yml`, see service=airflow-scheduler :
 ```yaml
 group_add:
 - 1001
 ```
+
+**Backfill not started with scheduler conflict**
+
+When running a backfill and you see an error like:
+```ini
+[2025-06-08T13:07:32.748+0000] {backfill_job_runner.py:927} ERROR - Backfill cannot be created for DagRun scheduled__2025-06-08T13:00:00+00:00 in 2025-06-08T13:00:00, as there's already scheduled in a RUNNING state.
+[2025-06-08T13:07:32.749+0000] {backfill_job_runner.py:934} ERROR - Changing DagRun into BACKFILL would cause scheduler to lose track of executing tasks. Not changing DagRun type into BACKFILL, and trying insert another DagRun into database would cause database constraint violation for dag_id + execution_date combination. Please adjust backfill dates or wait for this DagRun to finish.
+```
+
+Then, go to the airflow ui and **toggle the dag off**, or monitor the dag to not be in a `RUNNING` state
