@@ -55,6 +55,25 @@ CREATE TABLE IF NOT EXISTS "raw"."raw_ge_history" (
 -- VIEWS
 ------------------------------------------------
 ------------------------------------------------
+CREATE MATERIALIZED VIEW IF NOT EXISTS "transform"."ge_history" as
+SELECT
+  item_id,
+  to_timestamp(event_unixtime) at time zone 'utc' AS event_timestamp,
+  avg_high_price AS avg_high_price,
+  coalesce(high_price_volume, 0) AS high_price_volume,
+  (avg_high_price::BIGINT * high_price_volume::BIGINT) AS high_market_spend,
+  avg_low_price AS avg_low_price,
+  coalesce(low_price_volume, 0) AS low_price_volume,
+  (avg_low_price::BIGINT * low_price_volume::BIGINT) AS low_market_spend,
+  ROUND((
+    coalesce(avg_high_price::BIGINT * high_price_volume::BIGINT, 0) +
+    coalesce(avg_low_price::BIGINT * low_price_volume::BIGINT, 0)
+  ) / nullif(coalesce(low_price_volume, 0) + coalesce(high_price_volume, 0), 0)::FLOAT)::BIGINT AS weighted_price,
+  coalesce(low_price_volume, 0) + coalesce(high_price_volume, 0) AS total_volume,
+  (coalesce(avg_high_price::BIGINT * high_price_volume::BIGINT, 0) + coalesce(avg_low_price::BIGINT * low_price_volume::BIGINT, 0)) AS total_market_spend
+FROM raw.raw_ge_history
+order by event_unixtime desc
+;
 
 -- INDEXES
 ------------------------------------------------
