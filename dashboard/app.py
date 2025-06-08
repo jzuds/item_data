@@ -3,46 +3,47 @@ import pandas as pd
 from sqlalchemy import create_engine, text
 from dotenv import load_dotenv
 import os
-import altair as alt  # Make sure this import is included at the top
+import altair as alt
 
-
-# Load environment variables from .env
+# Load environment variables
 load_dotenv()
 
-# Create SQLAlchemy engine
 def get_engine():
-    db_url = (os.getenv('DATABASE_URL'))
+    db_url = os.getenv('DATABASE_URL')
     return create_engine(db_url)
 
-# Load sample data using SQLAlchemy
 def load_sample_data(engine):
     query = text("""
-        WITH hourly_agg AS (
-            SELECT
-                item_id,
-                date_trunc('hour', to_timestamp(event_unixtime) AT TIME ZONE 'UTC') AS event_hourly_utc,
-                ROUND(
-                    SUM((avg_low_price) * (low_price_volume)) 
-                    / NULLIF(SUM(low_price_volume), 0)
-                ) AS avgw_hourly_low_price,
-                ROUND(
-                    SUM((avg_high_price) * (high_price_volume)) 
-                    / NULLIF(SUM(high_price_volume), 0)
-                ) AS avgw_hourly_high_price
-            FROM raw.raw_ge_history
-            WHERE item_id = 565
-            GROUP BY item_id, date_trunc('hour', to_timestamp(event_unixtime) AT TIME ZONE 'UTC')
-            ORDER BY date_trunc('hour', to_timestamp(event_unixtime) AT TIME ZONE 'UTC') DESC
-        )
-        SELECT
-            item_id,
-            event_hourly_utc,
-            event_hourly_utc AT TIME ZONE 'UTC' AT TIME ZONE 'America/New_York' as event_hourly_est,
-            avgw_hourly_low_price,
-            avgw_hourly_high_price
-        FROM hourly_agg
-        ;
-
+    SELECT 
+        item_id,
+        event_timestamp,
+        avg_high_price,
+        high_price_volume,
+        high_market_spend,
+        avg_low_price,
+        low_price_volume,
+        low_market_spend,
+        weighted_price,
+        total_volume,
+        total_market_spend,
+        sum(total_volume) OVER (
+                PARTITION BY item_id
+                ORDER BY event_timestamp
+                RANGE BETWEEN INTERVAL '1 day' PRECEDING AND CURRENT ROW
+        )                                   as trailing_one_day_total_volume,
+        (avg_high_price - avg_low_price) 	as high_low_margin,
+        (avg_high_price - weighted_price) 	as high_weighted_margin,
+        (weighted_price - avg_low_price) 	as weighted_low_margin,
+        ROUND(
+            AVG(avg_high_price - avg_low_price) OVER (
+                PARTITION BY item_id
+                ORDER BY event_timestamp
+                RANGE BETWEEN INTERVAL '1 day' PRECEDING AND CURRENT ROW
+            ), 2
+        ) AS one_day_avg_high_low_margin
+    FROM "transform".ge_history
+    WHERE item_id = 565
+    ORDER BY event_timestamp DESC;
     """)
     with engine.connect() as connection:
         df = pd.read_sql(query, connection)
@@ -50,48 +51,58 @@ def load_sample_data(engine):
 
 def main():
     st.title("GE History Viewer")
-    st.write("High and Low Prices Over Time from `raw.raw_ge_history`:")
-
     engine = get_engine()
+
     try:
         df = load_sample_data(engine)
 
-        # Check if required columns exist
-        required_cols = ['event_hourly_est', 'avgw_hourly_low_price', 'avgw_hourly_high_price']
-        if all(col in df.columns for col in required_cols):
-            price_df = df[required_cols].copy()
-            price_df = price_df.sort_values(by='event_hourly_est', ascending=False)
+        # High/low price chart
+        st.header("1. Average High vs Low Prices Over Time")
+        price_df = df[['event_timestamp', 'avg_high_price', 'avg_low_price']].sort_values(by='event_timestamp')
+        chart_df = price_df.melt(id_vars='event_timestamp', value_vars=['avg_high_price', 'avg_low_price'],
+                                 var_name='Price Type', value_name='Price')
+        price_min = price_df[['avg_high_price', 'avg_low_price']].min().min()
+        price_max = price_df[['avg_high_price', 'avg_low_price']].max().max()
+        price_range = [price_min * 0.95, price_max * 1.05]  # ±5% buffer
+        chart = alt.Chart(chart_df).mark_line().encode(
+            x='event_timestamp:T',
+            y=alt.Y('Price:Q', scale=alt.Scale(domain=price_range)),
+            color='Price Type:N'
+        ).properties(
+            width=700,
+            height=400
+        )
 
+        st.altair_chart(chart, use_container_width=True)
 
-            # After creating `price_df`
-            y_min = min(price_df[['avgw_hourly_high_price', 'avgw_hourly_low_price']].min())
-            y_max = max(price_df[['avgw_hourly_high_price', 'avgw_hourly_low_price']].max())
+        # Volume Chart
+        st.header("Volume: Accumulative 1D Total")
+        vol_df = df[['event_timestamp', 'trailing_one_day_total_volume']].sort_values(by='event_timestamp')
+        vol_df = vol_df.melt(id_vars='event_timestamp', value_vars=['trailing_one_day_total_volume'],
+                             var_name='Volume Type', value_name='Volume')
 
-            # Melt the dataframe to long format for Altair
-            chart_df = price_df.melt(id_vars='event_hourly_est', value_vars=['avgw_hourly_high_price', 'avgw_hourly_low_price'],
-                                    var_name='Price Type', value_name='Price')
+        vol_chart = alt.Chart(vol_df).mark_area(opacity=0.6).encode(
+            x='event_timestamp:T',
+            y=alt.Y('Volume:Q'),
+            color='Volume Type:N'
+        ).properties(width=700, height=300)
 
-            # Create the Altair line chart
-            chart = alt.Chart(chart_df).mark_line().encode(
-                x='event_hourly_est:T',
-                y=alt.Y('Price:Q', scale=alt.Scale(domain=[y_min, y_max])),
-                color='Price Type:N'
-            ).properties(
-                width=700,
-                height=400,
-                title="Average High and Low Prices Over Time"
-            )
+        st.altair_chart(vol_chart, use_container_width=True)
 
-            st.altair_chart(chart, use_container_width=True)
+        # One-day rolling average margin
+        st.header("24H Avg High-Low Margin")
+        roll_chart = alt.Chart(df.sort_values(by='event_timestamp')).mark_line(color='green').encode(
+            x='event_timestamp:T',
+            y='one_day_avg_high_low_margin:Q'
+        ).properties(width=700, height=250)
+        st.altair_chart(roll_chart, use_container_width=True)
 
-            st.dataframe(price_df.head(24))
-
-        else:
-            st.warning(f"One or more required columns not found in the data: {required_cols}")
+        # Show data
+        st.subheader("Raw Data Snapshot")
+        st.dataframe(df.head(24))
 
     except Exception as e:
         st.error(f"Error loading data: {e}")
-
 
 if __name__ == "__main__":
     main()
