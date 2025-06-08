@@ -2,7 +2,7 @@ COMPOSE_FILE = docker-compose.yml
 BACKFILL_DAG_NAME ?= ingestion_raw_ge_history
 BACKFILL_DATE ?=
 
-.PHONY: init-project up down backfill dbup airflow-cleanup
+.PHONY: init-project up down backfill dbup airflow-cleanup refresh-dashboard
 
 init-project:
 	@
@@ -32,3 +32,6 @@ dbup:
 airflow-cleanup:
 	docker-compose -f $(COMPOSE_FILE) exec airflow-webserver airflow tasks clear "$(BACKFILL_DAG_NAME)" \
 		--yes
+
+refresh-dashboard:
+	docker-compose -f $(COMPOSE_FILE) restart dashboard
