@@ -4,7 +4,7 @@ x-common-depends: &common-depends
 
 x-healthcheck-postgres: &healthcheck-postgres
   test: ["CMD-SHELL", "pg_isready -U item_data_user -d item_data_db"]
-  interval: 10s
+  interval: 600s
   timeout: 5s
   retries: 5
 
