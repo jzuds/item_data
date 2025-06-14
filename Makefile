@@ -2,7 +2,7 @@ COMPOSE_FILE = docker-compose.yml
 BACKFILL_DAG_NAME ?= ingestion_raw_ge_history
 BACKFILL_DATE ?=
 
-.PHONY: init-project up down backfill dbup airflow-cleanup refresh-dashboard
+.PHONY: init-project up down backfill dbup dashup airflow-cleanup refresh-dashboard
 
 init-project:
 	@
@@ -28,6 +28,9 @@ backfill:
 
 dbup:
 	docker-compose -f $(COMPOSE_FILE) up osrs-database -d
+
+dashup:
+	docker-compose -f $(COMPOSE_FILE) up dashboard -d
 
 airflow-cleanup:
 	docker-compose -f $(COMPOSE_FILE) exec airflow-webserver \
